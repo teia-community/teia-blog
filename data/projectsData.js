@@ -1,19 +1,33 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'hicetnunc.art',
+    description: `A trusted hicetnunc mirror run by Manitcor from the repo https://github.com/IntegroLabs/hicetnunc. Includes some minor frontend code modifications but uses the original contracts.`,
+    imgSrc: '/static/images/hicetnuncart.png',
+    href: 'https://www.hicetnunc.art',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
+    title: 'H=NC Vote',
+    description: `Vote on the future of the H=N Community project.`,
     imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    href: 'https://vote.hencommunity.quest',
+  },
+  {
+    title: 'H=NC Discord',
+    description: `Join the primary channel of discussion for this hicetnunc splinter / revival project.`,
+    imgSrc: '/static/images/time-machine.jpg',
+    href: 'https://discord.gg/US8gMfEkM2',
+  },
+  {
+    title: 'H=NC Discourse',
+    description: `A forum space for long form discussion and planning.`,
+    imgSrc: '/static/images/time-machine.jpg',
+    href: 'https://discourse.hencommunity.quest',
+  },
+  {
+    title: 'Submit A Link',
+    description: `Is there an important link we're missing? This is a community powered project and a community powered website, add a link by submitting a PR to our GitHub (it's easy!), or create an issue to provide the info for someone else to add it.`,
+    imgSrc: '/static/images/githubsubmitalink.jpg',
+    href: 'https://discourse.hencommunity.quest',
   },
 ]
 
