@@ -23,3 +23,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
+
+.dark svg.logo_svg__logo {
+  fill: white;
+}
