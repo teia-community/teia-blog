@@ -1,6 +1,6 @@
 const siteMetadata = {
   title: 'H=N Community Updates & Resources',
-  author: 'ufffd, and you. contribute!',
+  author: 'ufffd, hen-community, and you. contribute!',
   headerTitle: 'ommunity.Quest',
   description: "Follow the H=N Community's quest for decentralization.",
   language: 'en-us',
