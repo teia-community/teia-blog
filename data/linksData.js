@@ -1,4 +1,4 @@
-const projectsData = [
+const linksData = [
   {
     title: 'hicetnunc.art',
     description: `A trusted hicetnunc mirror run by Manitcor from the repo https://github.com/IntegroLabs/hicetnunc. Includes some minor frontend code modifications but uses the original contracts.`,
@@ -31,4 +31,4 @@ const projectsData = [
   },
 ]
 
-export default projectsData
+export default linksData
