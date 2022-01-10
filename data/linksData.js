@@ -2,25 +2,25 @@ const linksData = [
   {
     title: 'hicetnunc.art',
     description: `A trusted hicetnunc mirror run by Manitcor from the repo https://github.com/IntegroLabs/hicetnunc. Includes some minor frontend code modifications but uses the original contracts.`,
-    imgSrc: '/static/images/hicetnuncart.png',
+    imgSrc: '/static/images/hicetnunc-rectangle.png',
     href: 'https://www.hicetnunc.art',
   },
   {
     title: 'H=NC Vote',
     description: `Vote on the future of the H=N Community project.`,
-    imgSrc: '/static/images/hencvote-rectangle.jpg',
+    imgSrc: '/static/images/hencvote-rectangle.png',
     href: 'https://vote.hencommunity.quest',
   },
   {
     title: 'H=NC Discord',
     description: `Join the primary channel of discussion for this hicetnunc splinter / revival project.`,
-    imgSrc: '/static/images/discord-rectangle.jpg',
+    imgSrc: '/static/images/discord-rectangle.png',
     href: 'https://discord.gg/US8gMfEkM2',
   },
   {
     title: 'H=NC Discourse',
     description: `A forum space for long form discussion and planning.`,
-    imgSrc: '/static/images/discourse-rectangle.jpg',
+    imgSrc: '/static/images/discourse-rectangle.png',
     href: 'https://discourse.hencommunity.quest',
   },
   {
