@@ -4,34 +4,13 @@
 
 ## H=N Community Blog
 
-## Quick Start Guide
-
-1. JS (official support)
-
-```bash
-npx degit https://github.com/timlrx/tailwind-nextjs-starter-blog.git
-```
-
-    or TS (community support)
-
-```bash
-npx degit timlrx/tailwind-nextjs-starter-blog#typescript
-```
-
-2. Personalize `siteMetadata.js` (site related information)
-3. Personalize `authors/default.md` (main author)
-4. Modify `projectsData.js`
-5. Modify `headerNavLinks.js` to customize navigation links
-6. Add blog posts
-7. Deploy on Vercel
-
-## Installation
+#### Installation
 
 ```bash
 npm install
 ```
 
-## Development
+#### Development
 
 First, run the development server:
 
@@ -55,7 +34,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 `data/authors/default.md` - default author information (required). Additional authors can be added as files in `data/authors`.
 
-`data/projectsData.js` - data used to generate styled card on the projects page.
+`data/linksData.js` - data used to generate styled card on the links page.
 
 `data/headerNavLinks.js` - navigation links.
 
