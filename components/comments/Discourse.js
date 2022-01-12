@@ -4,7 +4,7 @@ import siteMetadata from '@/data/siteMetadata'
 export default function DiscourseForum({ thread }) {
   useEffect(() => {
     window.DiscourseEmbed = {
-      discourseUrl: siteMetadata.comment.Discourse.url,
+      discourseUrl: siteMetadata.comment.discourseConfig.url,
       discourseEmbedUrl: thread,
     }
 
