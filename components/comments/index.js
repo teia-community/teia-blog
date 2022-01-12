@@ -19,12 +19,19 @@ const DisqusComponent = dynamic(
   },
   { ssr: false }
 )
+const DiscourseComponent = dynamic(
+  () => {
+    return import('@/components/comments/Discourse')
+  },
+  { ssr: false }
+)
 
 const Comments = ({ frontMatter }) => {
   let term
   switch (
     siteMetadata.comment.giscusConfig.mapping ||
-    siteMetadata.comment.utterancesConfig.issueTerm
+    siteMetadata.comment.utterancesConfig.issueTerm ||
+    siteMetadata.comment.discourseConfig.threadTerm
   ) {
     case 'pathname':
       term = frontMatter.slug
@@ -46,6 +53,9 @@ const Comments = ({ frontMatter }) => {
       )}
       {siteMetadata.comment && siteMetadata.comment.provider === 'disqus' && (
         <DisqusComponent frontMatter={frontMatter} />
+      )}
+      {siteMetadata.comment && siteMetadata.comment.provider === 'discourse' && (
+        <DiscourseComponent thread={window.location.href} />
       )}
     </div>
   )

@@ -29,7 +29,12 @@ const siteMetadata = {
   comment: {
     // Select a provider and use the environment variables associated to it
     // https://vercel.com/docs/environment-variables
-    provider: 'giscus', // supported providers: giscus, utterances, disqus
+    provider: 'discourse', // supported providers: discourse, giscus, utterances, disqus
+    discourseConfig: {
+      url: 'https://discourse.hencommunity.quest/',
+      user: 'blogbot',
+      threadTerm: 'url', // supported options: url, topic (not implemented yet)
+    },
     giscusConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
       // https://giscus.app/
