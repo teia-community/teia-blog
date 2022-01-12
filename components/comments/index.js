@@ -55,7 +55,7 @@ const Comments = ({ frontMatter }) => {
         <DisqusComponent frontMatter={frontMatter} />
       )}
       {siteMetadata.comment && siteMetadata.comment.provider === 'discourse' && (
-        <DiscourseComponent thread={window.location.href} />
+        <DiscourseComponent thread={term} />
       )}
     </div>
   )
