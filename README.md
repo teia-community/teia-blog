@@ -140,6 +140,6 @@ Feature request? Check the past discussions to see if it has been brought up pre
 - [Example of long prose](https://tailwind-nextjs-starter-blog.vercel.app/blog/the-time-machine)
 - [Example of Nested Route Post](https://tailwind-nextjs-starter-blog.vercel.app/blog/nested-route/introducing-multi-part-posts-with-nested-routing)
 
-## Licence Used
+## Licences Used
 
 [Tailwind Next.js Starter Blog (MIT)](https://github.com/timlrx/tailwind-nextjs-starter-blog/blob/master/LICENSE) © [Timothy Lin](https://www.timrlx.com)
