@@ -6,6 +6,7 @@ export default function DiscourseForum({ thread }) {
     window.DiscourseEmbed = {
       discourseUrl: siteMetadata.comment.discourseConfig.url,
       discourseEmbedUrl: thread,
+      discourseReferrerPolicy: 'no-referrer-when-downgrade',
     }
 
     const d = document.createElement('script')
