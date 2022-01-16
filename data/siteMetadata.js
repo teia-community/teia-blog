@@ -31,7 +31,7 @@ const siteMetadata = {
     // https://vercel.com/docs/environment-variables
     provider: 'discourse', // supported providers: discourse, giscus, utterances, disqus
     discourseConfig: {
-      url: 'https://discourse.hencommunity.quest',
+      url: 'https://discourse.hencommunity.quest/',
       user: 'blogbot',
       threadTerm: 'url', // supported options: url, topic (not implemented yet)
     },
