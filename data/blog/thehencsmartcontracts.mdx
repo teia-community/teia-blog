@@ -1,0 +1,35 @@
+---
+title: 'Introducing the new HENC platform smart contracts'
+date: 2022-01-24T20:51:14Z
+lastmod: '2022-01-24'
+tags: ['smart contract', 'community', 'dev', 'FAQ']
+draft: false
+summary: 'the new v3 smartcontract and the new community multisig contract - an introduction'
+bibliography: references-data.bib
+authors: ['norulesjustfeels']
+---
+
+
+
+
+_the new v3 smartcontract and the new community multisig contract - an introduction_
+
+
+# Introducing the new HENC platform smart contracts
+
+
+Read the [Hic Et Nunc v3 marketplace smart contract](https://leonnicholls.medium.com/hic-et-nunc-v3-marketplace-smart-contract-ca1882b01b66) and [Hic Et Nunc multi-sig smart contract](https://leonnicholls.medium.com/hic-et-nunc-multi-sig-smart-contract-d1f63fe5d24) articles for a technical deep dive.
+ 
+On Nov 11, the Hic Et Nunc (HEN) founder and leading developer, [@crzypatchwork](https://github.com/crzypatchwork), shut down the hicetnunc.xyz site. Since the HEN code is open-sourced, the HEN community launched an alternate marketplace at [https://hicetnunc.art/](https://hicetnunc.art/).  
+
+The hicetnunc.art marketplace uses the existing HEN v2 smart contracts, so the platform fees are still going to its admin, @crzypatchwork. He attempted to reduce the fee from 2.5% to 0%, but it wasn’t possible due to a technical issue with the smart contract, so he reduced it to 1%.
+
+Since the HEN community wants to keep the marketplace alive, it needs funding for running costs like IPFS pinning and maintaining the platform. A new v3 marketplace smart contract was created to send all platform fees to an account controlled by the community. The main developer of the v3 marketplace smart contract is [@jagracar](https://twitter.com/jagracar), with help from community members in the [HEN Community Discord](https://discord.gg/nBqcRB33Xv).
+
+The existing minting smart contract, discussed in [Hic Et Nunc Smart Contracts (Part 1)](https://leonnicholls.medium.com/hic-et-nunc-smart-contracts-part-1-e4ad5d0934b9), will still be used for [minting](https://github.com/hicetnunc2000/hicetnunc/wiki/How-to-mint-%F0%9F%8C%BF), and the new marketplace will still be swapping OBJKT NFT’s. The new marketplace GUI will still support v2 [swaps](https://github.com/hicetnunc2000/hicetnunc/wiki/How-to-swap-%F0%9F%94%83) but will use v3 for all new swaps. [@xat](https://twitter.com/xatxat), a community member, already has changes ready to support v3 in hicdex, the indexer used by HEN (you can [read](https://leonnicholls.medium.com/hicdex-the-hic-et-nunc-indexer-bd45f27a228f) more about how hicdex works).
+
+Along with a new v3 marketplace contract, a multi-signature contract (or multi-sig for short) was developed. A multi-sig is a smart contract that allows several users to manage and divide responsibility for funds. The multi-sig would enable the HEN community to manage the platform fees collected by the v3 marketplace contract. @jagracar created a [web GUI](https://multisign.onrender.com/proposals) to invoke the various multi-sig features.
+
+The community is also formalizing a [decentralized autonomous organization](https://en.wikipedia.org/wiki/The_DAO_(organization)) (DAO). Since this process will take time, the multi-sig features were expanded to act as a proposed basic DAO contract in the meantime.
+
+The Tezos Foundation introduced the smart contract developers to an auditing firm, [inference ag](https://inference.ag/), which agreed to an independent audit of the v3 marketplace and multi-sig contracts. Once the audit is complete, the new v3 marketplace and multi-sig contracts will be deployed.
