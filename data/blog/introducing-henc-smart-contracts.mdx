@@ -30,3 +30,28 @@ Along with a new community marketplace contract, a multi-signature contract (or 
 The community is also formalizing a [decentralized autonomous organization](<https://en.wikipedia.org/wiki/The_DAO_(organization)>) (DAO). Since this process will take time, the multi-sig features were expanded to act as a proposed basic DAO contract in the meantime.
 
 The Tezos Foundation introduced the smart contract developers to an auditing firm, [inference ag](https://inference.ag/), which agreed to an independent audit of the community marketplace and multi-sig contracts. Once the audit is complete, the new community marketplace and multi-sig contracts will be deployed.
+
+
+
+
+## Comparing the new Hic Et Nunc community marketplace smart contract to the Hic Et Nunc v2 marketplace smart contract
+
+  
+The new Hic Et Nunc community smart contract is based on the Hic Et Nunc v2 marketplace smart contract designed by [crzypatchwork](https://github.com/crzypatchwork). The v2 contract enabled the most successful NFT market on the Tezos blockchain and opened opportunities for various other marketplaces. The new community marketplace contract includes multiple changes based on lessons learned since the v2 launch and supports new blockchain features. The new contract was also independently audited to reduce the chances of a smart contract exploit, which required better comments, documentation, and testing.
+
+
+|[new HEN community marketplace](https://github.com/hen-community/objkt-swap/blob/jagracar/v3-prototype/smart-py/objkt_swap_v3.py) | [HEN marketplace (v2)](https://github.com/hicetnunc2000/objkt-swap/blob/master/smart-py/objkt_swap_v2.py) |
+|---------------------------|----------------------|
+|Fees go to a community-controlled [multi-sig account](https://leonnicholls.medium.com/hic-et-nunc-multi-sig-smart-contract-d1f63fe5d24) |Fees received and rate controlled by [crzypatchwork](https://github.com/crzypatchwork)|
+| Audited by [inference ag](https://inference.ag/)|Not audited|
+|Ability to pause swaps and collects (to help with a transition to a new contract or to protect against an exploit; requires approval by the multi-sig users)|No ability to pause the contract            |
+|The roles of the manager and the fee recipient are separated|Manager account is also the fee recipient|
+|Changing the manager account is protected with a two-phase commit|Manager account is changed in a single step  |
+|Support for multiple [FA2](https://gitlab.com/tezos/tzip/-/blob/master/proposals/tzip-12/tzip-12.md) (NFT) tokens|Only supports OBJKT tokens|
+|Additional checks in the code to protect against bad parameter values|                      |
+|Error codes (part of the [TZIP-16 contract metadata spec](https://tzip.tezosagora.org/proposal/tzip-16/))|No error codes |
+|Detailed comments for all entrypoints, parameters, and each code step|Some comments in the collect entrypoint    |
+|Expanded contract metadata| |
+|Ability to update contract metadata|Static contract metadata|
+|Support contract [views](https://smartpy.io/docs/general/views/) to provide informative functions that can be invoked by other smart contracts|Does not support views (wasn’t available on Tezos at the time)    |
+|Comprehensive tests|Limited tests|
