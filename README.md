@@ -1,8 +1,4 @@
-![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
-
-# hencommunity.quest
-
-## H=N Community Blog
+# Teia Blog
 
 #### Installation
 
