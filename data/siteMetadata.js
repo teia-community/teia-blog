@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'H=N Community Updates & Resources',
+  title: 'Teia Community Updates & Resources',
   author: 'ufffd, hen-community, and you. contribute!',
   headerTitle: 'ommunity.Quest',
-  description: "Follow the H=N Community's quest for decentralization.",
+  description: "Follow the Teia Community's quest for decentralization.",
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://hencommunity.quest',
