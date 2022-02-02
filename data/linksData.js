@@ -1,9 +1,9 @@
 const linksData = [
   {
-    title: 'hicetnunc.art',
-    description: `A trusted hicetnunc mirror run by Manitcor from the repo https://github.com/IntegroLabs/hicetnunc. Includes some minor frontend code modifications but uses the original contracts.`,
-    imgSrc: '/static/images/hicetnunc-rectangle.png',
-    href: 'https://www.hicetnunc.art',
+    title: 'teia.art',
+    description: `Teia.Art Marketplace`,
+    imgSrc: '/static/images/logo.png',
+    href: 'https://www.teia.art',
   },
   {
     title: 'Teia Vote',
