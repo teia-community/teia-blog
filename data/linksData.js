@@ -8,7 +8,7 @@ const linksData = [
   {
     title: 'Teia Vote',
     description: `Vote on the future of the Teia community project.`,
-    imgSrc: '/static/images/teia-vote-rectangle.png',
+    imgSrc: '/static/images/teia-vote.png',
     href: 'https://vote.hencommunity.quest',
   },
   {
