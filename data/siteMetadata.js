@@ -1,18 +1,18 @@
 const siteMetadata = {
   title: 'Teia Community Updates & Resources',
-  author: 'ufffd, hen-community, and you. contribute!',
-  headerTitle: 'ommunity.Quest',
+  author: 'Teia Community',
+  headerTitle: 'Teia Blog',
   description: "Follow the Teia Community's quest for decentralization.",
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://hencommunity.quest',
-  siteRepo: 'https://github.com/hen-community/hencommunity.quest-blog',
+  siteRepo: 'https://github.com/teia-community/teia-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/logo.png',
   socialBanner: '/static/images/logo.png',
   email: 'admin@hencommunity.quest',
-  github: 'https://github.com/hen-community',
-  twitter: 'https://twitter.com/hen_community',
+  github: 'https://github.com/teia-community',
+  twitter: 'https://twitter.com/teia_community',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics, umami or googleAnalytics

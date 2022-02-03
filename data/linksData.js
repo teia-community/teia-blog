@@ -3,12 +3,12 @@ const linksData = [
     title: 'teia.art',
     description: `Teia.Art Marketplace`,
     imgSrc: '/static/images/logo.png',
-    href: 'https://www.teia.art',
+    href: 'https://teia.art',
   },
   {
     title: 'Teia Vote',
     description: `Vote on the future of the Teia community project.`,
-    imgSrc: '/static/images/hencvote-rectangle.png',
+    imgSrc: '/static/images/teia-vote-rectangle.png',
     href: 'https://vote.hencommunity.quest',
   },
   {

@@ -13,7 +13,7 @@ export default function Links() {
             Links
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            H=N Community resources and links
+            Teia Community resources and links
           </p>
         </div>
         <div className="container py-12">
