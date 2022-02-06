@@ -1,0 +1,95 @@
+{
+  "version": {
+    "fullVersion": "0.59.6",
+    "major": "0",
+    "minor": "59",
+    "patch": "6"
+  },
+  "meta": {},
+  "collections": [
+    {
+      "label": "Blog",
+      "name": "posts",
+      "path": "data/blog",
+      "fields": [
+        {
+          "type": "string",
+          "label": "Title",
+          "name": "title",
+          "namespace": ["posts", "title"]
+        },
+        {
+          "type": "string",
+          "label": "Date",
+          "name": "date",
+          "namespace": ["posts", "date"]
+        },
+        {
+          "type": "string",
+          "label": "Last Modified",
+          "name": "lastmod",
+          "namespace": ["posts", "lastmod"]
+        },
+        {
+          "type": "string",
+          "label": "Draft",
+          "name": "draft",
+          "namespace": ["posts", "draft"]
+        },
+        {
+          "type": "string",
+          "label": "Summary",
+          "name": "summary",
+          "namespace": ["posts", "summary"]
+        },
+        {
+          "type": "string",
+          "label": "Authors",
+          "name": "authors",
+          "namespace": ["posts", "authors"]
+        },
+        {
+          "type": "string",
+          "label": "Bibliography",
+          "name": "bibliography",
+          "namespace": ["posts", "bibliography"]
+        },
+        {
+          "type": "string",
+          "label": "Blog Post Body",
+          "name": "body",
+          "isBody": true,
+          "ui": {
+            "component": "textarea"
+          },
+          "namespace": ["posts", "body"]
+        }
+      ],
+      "namespace": ["posts"]
+    },
+    {
+      "label": "Test Blog",
+      "name": "blogposts",
+      "path": "content/posts",
+      "fields": [
+        {
+          "type": "string",
+          "label": "Title",
+          "name": "title",
+          "namespace": ["blogposts", "title"]
+        },
+        {
+          "type": "string",
+          "label": "Blog Post Body",
+          "name": "body",
+          "isBody": true,
+          "ui": {
+            "component": "textarea"
+          },
+          "namespace": ["blogposts", "body"]
+        }
+      ],
+      "namespace": ["blogposts"]
+    }
+  ]
+}

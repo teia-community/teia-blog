@@ -1,6 +1,8 @@
+import dynamic from 'next/dynamic'
+import { TinaEditProvider } from 'tinacms/dist/edit-state'
+const TinaCMS = dynamic(() => import('tinacms'), { ssr: false })
 import '@/css/tailwind.css'
 import '@/css/prism.css'
-
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
 
@@ -12,7 +14,12 @@ import { ClientReload } from '@/components/ClientReload'
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
-export default function App({ Component, pageProps }) {
+const branch = process.env.NEXT_PUBLIC_EDIT_BRANCH || 'main'
+const apiURL = isDevelopment
+  ? 'http://localhost:4001/graphql'
+  : `https://content.tinajs.io/content/${process.env.NEXT_PUBLIC_TINA_CLIENT_ID}/github/${branch}`
+
+const App = ({ Component, pageProps }) => {
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
@@ -21,8 +28,18 @@ export default function App({ Component, pageProps }) {
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
       <LayoutWrapper>
-        <Component {...pageProps} />
+        <TinaEditProvider
+          editMode={
+            <TinaCMS apiURL={apiURL}>
+              <Component {...pageProps} />
+            </TinaCMS>
+          }
+        >
+          <Component {...pageProps} />
+        </TinaEditProvider>
       </LayoutWrapper>
     </ThemeProvider>
   )
 }
+
+export default App

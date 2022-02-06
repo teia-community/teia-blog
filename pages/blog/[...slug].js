@@ -1,70 +1,89 @@
-import fs from 'fs'
-import PageTitle from '@/components/PageTitle'
-import generateRss from '@/lib/generate-rss'
-import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
+// import fs from 'fs'
+// import PageTitle from '@/components/PageTitle'
+// import generateRss from '@/lib/generate-rss'
+// import { MDXLayoutRenderer } from '@/components/MDXComponents'
+// import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
+
+import { staticRequest, gql } from 'tinacms'
+import Head from 'next/head'
+import { createGlobalStyle } from 'styled-components'
+import { useTina } from 'tinacms/dist/edit-state'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
-export async function getStaticPaths() {
-  const posts = getFiles('blog')
+const query = gql`
+  query BlogPostQuery($relativePath: String!) {
+    getPostsDocument(relativePath: $relativePath) {
+      data {
+        title
+        date
+        lastmod
+        summary
+        authors
+        bibliography
+        draft
+        body
+      }
+    }
+  }
+`
+
+export const getStaticPaths = async () => {
+  const postsListData = await staticRequest({
+    query: gql`
+      query GetPostsList {
+        getPostsList {
+          edges {
+            node {
+              sys {
+                filename
+              }
+            }
+          }
+        }
+      }
+    `,
+  })
+
   return {
-    paths: posts.map((p) => ({
-      params: {
-        slug: formatSlug(p).split('/'),
-      },
+    paths: postsListData.getPostsList.edges.map((edge) => ({
+      params: { slug: [edge.node.sys.filename] },
     })),
     fallback: false,
   }
 }
 
-export async function getStaticProps({ params }) {
-  const allPosts = await getAllFilesFrontMatter('blog')
-  const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === params.slug.join('/'))
-  const prev = allPosts[postIndex + 1] || null
-  const next = allPosts[postIndex - 1] || null
-  const post = await getFileBySlug('blog', params.slug.join('/'))
-  const authorList = post.frontMatter.authors || ['default']
-  const authorPromise = authorList.map(async (author) => {
-    const authorResults = await getFileBySlug('authors', [author])
-    return authorResults.frontMatter
-  })
-  const authorDetails = await Promise.all(authorPromise)
-
-  // rss
-  if (allPosts.length > 0) {
-    const rss = generateRss(allPosts)
-    fs.writeFileSync('./public/feed.xml', rss)
+export const getStaticProps = async ({ params }) => {
+  const variables = { relativePath: `${params.filename}.md` }
+  let data = {}
+  try {
+    data = await staticRequest({
+      query,
+      variables,
+    })
+  } catch {
+    // swallow errors related to document creation
   }
 
-  return { props: { post, authorDetails, prev, next } }
+  return {
+    props: {
+      variables,
+      data,
+      //myOtherProp: 'some-other-data',
+    },
+  }
 }
 
-export default function Blog({ post, authorDetails, prev, next }) {
-  const { mdxSource, toc, frontMatter } = post
+const defaultMarked = (markdown) => markdown
 
-  return (
-    <>
-      {frontMatter.draft !== true ? (
-        <MDXLayoutRenderer
-          layout={frontMatter.layout || DEFAULT_LAYOUT}
-          toc={toc}
-          mdxSource={mdxSource}
-          frontMatter={frontMatter}
-          authorDetails={authorDetails}
-          prev={prev}
-          next={next}
-        />
-      ) : (
-        <div className="mt-24 text-center">
-          <PageTitle>
-            Under Construction{' '}
-            <span role="img" aria-label="roadwork sign">
-              🚧
-            </span>
-          </PageTitle>
-        </div>
-      )}
-    </>
-  )
+export default function Blog(props) {
+  const { data } = useTina({
+    query,
+    variables: props.variables,
+    data: props.data,
+  })
+
+  console.log(data)
+
+  return <></>
 }

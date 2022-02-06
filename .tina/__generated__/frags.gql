@@ -1,0 +1,15 @@
+fragment PostsParts on Posts {
+  title
+  date
+  lastmod
+  draft
+  summary
+  authors
+  bibliography
+  body
+}
+
+fragment BlogpostsParts on Blogposts {
+  title
+  body
+}
