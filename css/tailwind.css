@@ -24,6 +24,15 @@ input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
 
+/* global styles, should move to a separate file */
+
 .dark svg.logo_svg__logo {
   fill: white;
+}
+
+.dark .light-mode-only {
+  display: none;
+}
+.light .dark-mode-only {
+  display: none;
 }
