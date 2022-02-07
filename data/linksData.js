@@ -33,7 +33,7 @@ const linksData = [
     title: 'Submit A Link',
     description: `Is there an important link we're missing? This is a community powered project and a community powered website, add a link by submitting a PR to our GitHub (it's easy!), or create an issue to provide the info for someone else to add it.`,
     imgSrc: '/static/images/github-rectangle.jpg',
-    href: 'https://github.com/teia-community/teia-blog/issues',
+    href: 'https://github.com/teia-community/teia-blog/issues/new?assignees=&labels=&template=submit_link.md&title=',
   },
 ]
 
