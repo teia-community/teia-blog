@@ -15,7 +15,7 @@ export default function Press() {
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             Teia in the news.{' '}
             <a
-              href="/static/Teia_Press_Kit.pdf"
+              href="/static/Teia Launch Press Release-Feb2022.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
