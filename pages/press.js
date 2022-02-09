@@ -1,6 +1,5 @@
 import siteMetadata from '@/data/siteMetadata'
 import pressData from '@/data/pressData'
-import Card from '@/components/Card'
 import { PageSEO } from '@/components/SEO'
 
 export default function Press() {
