@@ -6,19 +6,27 @@ import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/l
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
-export async function getStaticPaths() {
-  const posts = getFiles('blog')
+export async function getStaticPaths({ locales }) {
+  let paths = []
+
+  getFiles('blog').forEach((post) => {
+    locales.forEach((locale) => {
+      paths.push({
+        params: {
+          slug: formatSlug(post).split('/'),
+          locale,
+        },
+      })
+    })
+  })
+
   return {
-    paths: posts.map((p) => ({
-      params: {
-        slug: formatSlug(p).split('/'),
-      },
-    })),
+    paths: paths,
     fallback: false,
   }
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale, defaultLocale }) {
   const allPosts = await getAllFilesFrontMatter('blog')
   const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === params.slug.join('/'))
   const prev = allPosts[postIndex + 1] || null
@@ -35,6 +43,12 @@ export async function getStaticProps({ params }) {
   if (allPosts.length > 0) {
     const rss = generateRss(allPosts)
     fs.writeFileSync('./public/feed.xml', rss)
+  }
+
+  if (locale !== defaultLocale) {
+    const translated = await getFileBySlug('blog-' + locale, params.slug.join('/'))
+    post.mdxSource = translated.mdxSource
+    post.toc = translated.toc
   }
 
   return { props: { post, authorDetails, prev, next } }

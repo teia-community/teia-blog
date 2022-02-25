@@ -58,6 +58,10 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
+  i18n: {
+    locales: ['en', 'es', 'pt'],
+    defaultLocale: 'en',
+  },
   async headers() {
     return [
       {
