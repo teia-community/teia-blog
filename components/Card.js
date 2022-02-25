@@ -10,22 +10,41 @@ const Card = ({ title, description, imgSrc, href }) => (
     >
       {imgSrc &&
         (href ? (
-          <Link href={href} aria-label={`Link to ${title}`}>
-            <Image
-              alt={title}
-              src={imgSrc}
-              className="object-cover object-center lg:h-48 md:h-36"
-              width={544}
-              height={306}
-            />
-          </Link>
+          <>
+            <Link
+              href={href}
+              aria-label={`Link to ${title}`}
+              className="links-card-img-link links-card-img-link-wide"
+            >
+              <Image
+                alt={title}
+                src={imgSrc}
+                className="object-cover object-center lg:h-48 md:h-36 links-card-img links-card-img-wide"
+                width={400}
+                height={200}
+              />
+            </Link>
+            <Link
+              href={href}
+              aria-label={`Link to ${title}`}
+              className="links-card-img-link links-card-img-link-square"
+            >
+              <Image
+                alt={title}
+                src={imgSrc}
+                className="object-cover object-center lg:h-48 md:h-36 links-card-img links-card-img-square"
+                width={200}
+                height={200}
+              />
+            </Link>
+          </>
         ) : (
           <Image
             alt={title}
             src={imgSrc}
             className="object-cover object-center lg:h-48 md:h-36"
-            width={544}
-            height={306}
+            width={200}
+            height={200}
           />
         ))}
       <div className="p-6">

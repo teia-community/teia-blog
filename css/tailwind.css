@@ -36,3 +36,29 @@ input:-webkit-autofill:focus {
 .light .dark-mode-only {
   display: none;
 }
+
+.links-card-img-link img {
+  width: 100%;
+  height: 120px;
+}
+.links-card-img-link-wide {
+  display: block !important;
+}
+.links-card-img-link-square {
+  display: none !important;
+}
+
+@media (min-width: 1280px) {
+  .links-card-img-link-wide {
+    display: none !important;
+  }
+  .links-card-img-link-square {
+    display: block !important;
+  }
+  .links-card-img-link {
+    float: left;
+    margin-right: 1.5em;
+    width: 200px;
+    height: 200px;
+  }
+}
