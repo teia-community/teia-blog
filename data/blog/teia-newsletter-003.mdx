@@ -1,0 +1,121 @@
+---
+title: 'Teia Newsletter #3 - 7 Mar 2022'
+date: 2022-03-07T23:30:00Z
+lastmod: '2022-03-07'
+tags: ['communication', 'update', 'newsletter' ]
+draft: false
+summary: 'Crossplatform carity, defining structures and talking DAO'
+bibliography: references-data.bib
+authors: ['merchantcoppola', 'turbulentdeterminism']
+---
+
+_Crossplatform carity, defining structures and talking DAO_
+
+It was another week of a lot of internal progress for the Teia community. In this newsletter we have updates on: Hic et Nunc’s birthday, the charity initiative for Ukraine, our application for the Prix Ars Electronica, our project team organisation and discord structuring, the plan to move forward with the marketplace smart contract, and the launch of our Teia wiki!
+
+## Happy Birthday Hic Et Nunc!
+
+One year ago (1st March 2021) the experimental dApp Hic Et Nunc was launched and started an incredible journey for us all. You can learn more about [the history of Hic Et Nunc here](https://github.com/i3games/hen-timeline/blob/main/timeline.md#march-1-2021)
+
+Tip: If you want to take a trip down memory lane, you can visit a (limited) [snapshot of hic et nunc from the launch day on archive.org](https://web.archive.org/web/20210301170201/https://www.hicetnunc.xyz/#)
+
+As announced in the last Newsletter, the domain “hicetnunc.art” is now handed over to crzypatchwork and points to the same site as hicetnunc.xyz. This means that hicetnunc is hicetnunc again. Teia features like the collab contract, friends feed and future updates as well as the upcoming new swapping contract can only be accessed through “teia.art”.
+
+## Ukraine Fundraiser
+
+The current Invasion of Ukraine by the Russian Army has resulted in a humanitarian catastrophe for the people of Ukraine. The broader Tezos Art community joined forces and started a fundraiser initiative to collect money for civilian relief. Versum in conjunction with FxHash set up a shared [donation contract](https://tzkt.io/KT1DWnLiUkNtAQDErXxudFEH63JC6mqg3HEx/operations) that will redirect tezos to multiple charity orgs [(Find a list of the supported Orgs on our wiki)](https://github.com/teia-community/teia-docs/wiki/Ukranian-Fundraising#supported-organisations). The organisations chosen are all non-military (medical, aid, journalism, etc.) and the list can be changed later on if necessary.
+
+The Teia Community wants to help support this initiative alongside [Versum](https://versum.xyz/), [FxHash](https://www.fxhash.xyz/) and objkt.com, who all joined in donating to and promoting that contract.  
+  
+If you want to help, you can:
+-   Mint a OBJKT with a collab contract that automatically directs gains and royalties to that address [(Find a guide on how to do that on our wiki)](https://github.com/teia-community/teia-docs/wiki/Ukranian-Fundraising#how-to-set-up-a-collaboration-contract-on-teia-for-directing-sales-to-the-initiative-contract)
+-   Donate tezos to the fundraiser address directly (please don't send NFTs directly to the contract address!)
+-   Buy and promote fundraiser NFTs
+-   Raise awareness for this and other charity initiatives
+-   Support Ukrainian Artists ([https://nftbiker.xyz/event/ukraine](https://nftbiker.xyz/event/ukraine))
+
+[NFTBiker](https://twitter.com/NFTBiker) set up an overview Page for this initiative, where you can see the amount of money raised, the money already sent out to the orgs, and the OBJKTs minted with the collab contract: [https://nftbiker.xyz/event/supportukraine](https://nftbiker.xyz/event/supportukraine)
+
+The first batch of donations has already been sent out on 1st of march:
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The splits are now set on the donation contract:<a href="https://t.co/OPnmS4LKrG">https://t.co/OPnmS4LKrG</a><br><br>We triggered the first donation a few minutes ago:<a href="https://t.co/00QvfUcEUw">https://t.co/00QvfUcEUw</a><br><br>25900 ꜩ were sent (~84000 €) !!!<br><br>So about 12000€ to each of the 7 organisations we picked</p>&mdash; fxhash (@fx_hash_) <a href="https://twitter.com/fx_hash_/status/1498650246225747969?ref_src=twsrc%5Etfw">March 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## Teia currently unavailable in Russia
+
+Unfortunately due to the indexer of teia being maintained by manitcor of teztools, who is based in USA, he needed to put a geoblock for russian IPs in place to comply with the sanctions being put in place by the US government. [You can find Teztools staement regarding the situation on Discord](https://discord.com/channels/908672304236625970/908672304236625973/949716536849989712).
+
+According to our [core vision the Teia community](https://github.com/teia-community/teia-docs/wiki/Core-Values-Code-of-Conduct-Terms-and-Conditions#5-simplicity-and-accessibility) wants to keep the marketplace accessible to as many people as possible, including russian citizens. We are currently looking into setting and maintaining an alternative teia mirror that uses a indexer that is available in Russia. If you would like to help with this, please come to the discord server; We are looking for Developers in countries that allow providing these services with russian IPs and are able to set up a mirror of the Teia UI and indexer. We also have a general [instruction on how to set up mirrors/instances of Teai on our wiki](https://github.com/teia-community/teia-docs/wiki/How-to-set-up-a-Teia-Mirror)
+
+For now, If you are in the Russian Federation, these are the ways to access Teia:
+
+-   use a VPN (eg like [1clickVPN for chrome](https://chrome.google.com/webstore/detail/1clickvpn-free-vpn-for-ch/fcfhplploccackoneaefokcmbjfbkenj/related?hl=en))
+-   Use objkt.com
+-   use hic.af and under “settings” pick “hicdex” as indexer because hicdex is not blocking russian IPs. (this approach will not work once the new marketplace contract is in place)
+
+![](https://lh5.googleusercontent.com/Uz9HWR0Fr06VzLCHPMiO2N-p9VhbdLDYchI96cq0svqErGrBTFwLK9R7mDtYerTOzQK2GjqovEybR3L_UgICgpLXDQzWeitdF6Vii84aIOvyFz8jG_4v-CYYfB-e9p80vZohy83e)![](https://lh6.googleusercontent.com/0CNEHaoVEjYnD8fnjq-LItozrRXsKfCRn2MCgqHbLP9cqBNluxFqm7r-3A-fqvq8feZGohpPaxf7M8fa4wA-_zDZcmu4fWSVGW1IQH5DLRsLKCEeQTKS0ZhLrR40GvD2LBMo8axf)
+## Teia marketplace contract and DAO registration
+
+The legal team has continued researching our legal situation and looked for ways to go forward in terms of incorporating Teia. [you can read a summary of the current discussion on our discourse forum](https://discourse.hencommunity.quest/t/discussion-writeup-the-legal-roadmap-for-teia-next-steps/597)
+
+The main consensus is that we should incorporate Teia as soon as possible in order to have legal clarity and protecxtion. We are currently in touch with DAO specialists and trying to sort out the best way to register as a DAO, currently a good option would be to register Teia in the Royal marshal islands as they allow registration as DAO with a smartcontract defining the mebers of the entity.
+
+This week, [jagracar](https://twitter.com/jagracar) will start working on a DAO token prototype and is currently looking for tezos smart contract developers to help setting that up.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Researching different jurisdiction for DAO&#39;s. Marshal Islands comes up as the best place on a number of fronts by Incorporating in a jurisdiction that explicitly recognizes the unique structure of DAOs &amp; ensures limited liability to its members - pioneered by <a href="https://twitter.com/MarkLurie?ref_src=twsrc%5Etfw">@MarkLurie</a> <a href="https://twitter.com/midaods?ref_src=twsrc%5Etfw">@midaods</a> <a href="https://t.co/WhWXYeXKpS">pic.twitter.com/WhWXYeXKpS</a></p>&mdash; theschoolofbitcoin (@theschoolofbtc) <a href="https://twitter.com/theschoolofbtc/status/1496151718660538369?ref_src=twsrc%5Etfw">February 22, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+The current plan for the next step is to launch the marketplace contract with 0% fees (temporally) to avoid tax liabilities until we have registered Teia officially. We will be able to put fees in place via multisig vote at a later date. This is probably happening this week.
+
+We are eager to start promoting the new marketplace contract and for people to swap onto it. The deployment of the Teia marketplace contract will be another important step for us to become a truly community-owned project.
+
+## Guild/Working Group Updates
+
+We are currently formalising our internal working group structure through “guilds”: The guilds are semi-autonomous sub-groups dedicated to specific areas of the Teia project. The long term plan is for each guild to have its own multisig contract and manage its own budget. Our current guilds are: 
+
+- Culture/Equity
+- Development
+- Design
+- Security/Copymint fighting
+- PR/Communications
+- Operations
+- DAO Development
+  
+Each guild is in the process of appointing coordinators. These coordinators will track the guild’s progress, organise team members, assign tasks, and help onboard new volunteers. We hope to have coordinators appointed for all guilds within the next few weeks.
+
+To improve the flow of information we have created “bulletin boards” for every guild. These bulletin boards will contain the most important and up to date info: progress reports, discussion writeups, team lists, and guild specific discord votes. All discord users will have access to view the bulletin boards, but only the guild’s coordinators will be able to post there. [You can find a first sketch for bulletin board message templates on discord](https://discord.com/channels/908672304236625970/908695222177914890/949092630619390082)  
+  
+Ideally, this guild structure will allow more people to stay up to date with the progress of each working group, and will allow for more streamlined activity on tasks. Of course this whole structure is in an early stage and will adapt over time. 
+
+We are still in the process of onboarding volunteers that filled out the volunteers form. If you are interested in contributing, [please fill out this form](https://docs.google.com/forms/d/e/1FAIpQLSenb-_1FH3pyeQclVME9Bv12Tc5WzMN6ZYOYoHQckIIMrhjxw/viewform) and say hello on [the discord](https://discord.gg/W3A4vDg8) to find the correct channel for your field of interest.
+
+## wiki.teia.art
+
+Our Archive Team started setting up our own Teia Wki which will for now be hosted on our [Docs repository](https://github.com/teia-community/teia-docs) on github and aims at collecting Guidelines, Documents, FAQ sections, Onboarding Material.  
+  
+Currently the wiki is incomplete and is being worked on but it is already accessible at [wiki.teia.art](https://github.com/teia-community/teia-docs/wiki)
+
+New pages added during the last few days include
+-   [ukrainain relief (incl. guide on how to set up a fundraiser collab contract)](https://github.com/teia-community/teia-docs/wiki/Ukranian-Fundraising)    
+-   [updated FAQ section](https://github.com/teia-community/teia-docs/wiki/General)    
+-   [article on “governance on Teia”](https://github.com/teia-community/teia-docs/wiki/Governance-on-Teia)    
+-   [Updated articles and blogpost collection](https://github.com/teia-community/teia-docs/wiki/Resources-(Articles-Essays-Blogposts))    
+-   [How to set up a Teia clone/mirror](https://github.com/teia-community/teia-docs/wiki/How-to-set-up-a-Teia-Mirror)  
+
+## Application for Prix Ars Electronica  
+
+111v1ab and the “Grants and Awards” team have submitted an application for the [“Prix Ars Electronica” in the category “digital communities”](https://ars.electronica.art/prix/en/categories/digital-communities/), a grant awarded to “artistic and social projects and activities that aim to deliver social benefits, create and support communities, and foster an open and inclusive civil society”.   
+
+[You can find the full application booklet on our Github Archive](https://github.com/teia-community/teia-docs/blob/main/DocumentArchive/Submission_ArsElectronica_2022_Auth111v1ab.pdf)
+
+We are in the process of setting up a team that will aim to apply for more awards and grants. As always: if you are interested in helping with that, you can say hello in discord (channel: #🏆grants-and-awards) and fill out the [volunteer form](https://docs.google.com/forms/d/e/1FAIpQLSenb-_1FH3pyeQclVME9Bv12Tc5WzMN6ZYOYoHQckIIMrhjxw/viewform).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Sv3huUog7rM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Reminder: OBJKT4OBJKT4 - Community Edition
+
+To celebrate the anniversary of hicetnunc and the communities that have formed we are going to celebrate this moment with a special and forth edition of OBJKT4OBJKT.
+
+[Find more info and tips for OBJKT4OBJKT4 in our Teia Newsletter #2](http://og/teia-newsletter-002#objkt4objkt4-event)
+
+Objkt4Objkt4 is an initiative by [Diverse NFT Art](https://twitter.com/DiverseNftArt) to connect and bring people together, sharing their love of art and to make new friendships.
+-   Live Date: 25 - 27th March 2022    
+-   Platforms: [https://teia.art](https://teia.art), [https://versum.xyz](https://versum.xyz)    
+-   Suggested Hashtags: #OBJKT4OBJKT, #OBJKT4OBJKT4
