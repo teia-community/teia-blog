@@ -1,3 +1,5 @@
+const ghPages = process.env.DEPLOY_TARGET === 'gh-pages'
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
@@ -58,6 +60,10 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
+  target: ghPages ? 'serverless' : '',
+  basePath: ghPages ? '/teia-blog' : '',
+  assetPrefix: ghPages ? '/teia-blog' : '',
+  images: ghPages ? { loader: 'custom' } : {},
   async headers() {
     return [
       {
