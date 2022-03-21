@@ -1,7 +1,7 @@
 ---
 name: MerchantCoppola
 avatar: /static/images/merchantcoppola-avatar.png
-occupation: Experimental Typographer & Visual Poet
+occupation: pr & communication, visual poet
 twitter: https://twitter.com/MerchantCoppola
 teia: merchant_coppola
 github: https://github.com/merchantcoppola
