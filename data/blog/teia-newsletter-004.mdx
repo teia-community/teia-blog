@@ -1,0 +1,146 @@
+---
+title: 'Teia Newsletter #4 - 21 Mar 2022'
+date: 2022-03-21T20:30:00Z
+lastmod: '2022-03-21'
+tags: ['communication', 'update', 'newsletter']
+draft: false
+summary: 'The soft launch continues!'
+bibliography: references-data.bib
+authors: ['merchantcoppola', 'turbulentdeterminism', 'carolyn', 'malicioussheep']
+---
+
+_The soft-launch continues!_
+
+In this Week’s Newsletter: Marketplace Contract Launch, Design Updates, News About Teia’s Path Towards a DAO, Site Traffic Data, Outreach and More Fun!
+
+The Teia Community is moving on with the Teia Development: The past few days Teia has taken some huge steps forward. The marketplace contract going live marks having reached another important milestone towards Teia’s autonomy and decentralization!
+
+## Teia Marketplace Contract Launch
+
+The new Teia marketplace contract is now live with a temporary fee of 0% (for a limited time until we incorporate). The Teia Community plans to switch to a marketplace fee around 2.5% after that. [(Read more on our wiki)](https://github.com/teia-community/teia-docs/wiki/Marketplace-Fees)
+
+Unfortunately, swapping from collab contracts doesn’t work currently on the new marketplace contract. For swapping OBJKTs with collab contracts, please use the alternative mirror [http://teia.rocks](http://teia.rocks/) to swap onto the old v2 contract - your swaps will then also appear on [http://teia.art](http://teia.art/) - the dev team is currently working on fixing this issue.
+
+Please understand that there might be some delays and troubleshooting over the next days. It will also take some time until the new swaps will be supported by places like objktcom. The swaps on the new contract will need to be indexed by the sites that want to display them.
+
+## Voting On Showing Swaps From Objkt.com
+
+Having the new swapping contract in place means that we have to decide if we want to display swaps done on other marketplaces on [teia.art](http://teia.art). Along with this, we can start asking other marketplaces that display OBJKTs to show our swaps on their end. For further information, please refer to the [Discourse thread on the topic](https://discourse.hencommunity.quest/t/teia-art-swaps-and-objkt-com/581). Please note that we are still using the same minting contract as hicetnunc, so for now, teia OBJKTs are the same as HEN OBJKTs. This means that the OBJKTs minted on Teia show up on all marketplaces that show hicetnunc OBJKTs (i.e. hicetnunc.xyz, objktcom, rarible, [hic.af](http://hic.af/), etc). This won’t change no matter which platform supports which swapping contract. The swapping contract is the mechanism for listing OBJKTs for sale at a specific price and quantity. 
+
+A suggestion raised earlier on our Discord was to ask objktcom to show swaps done on Teia if we showed swaps done on their platform. This idea was brought to objktcom and they agreed that this would be a viable option. Please note that NFTs minted through objktcom will not be visible on Teia, since these are a different type of token.
+
+We have set up a vote on the Teia Vote tool asking the Community if we should display objktcom’s swaps. 
+(The list of wallets that are eligible to vote is the same as for the naming vote.)
+You may cast your vote here (until 25th of March, 00:00 UTC):
+[https://vote.hencommunity.quest/vote/QmPDYWmGdxae8gUxqiPa4rkuQCc8P6sggLvUi5HQrrCzug](https://vote.hencommunity.quest/vote/QmPDYWmGdxae8gUxqiPa4rkuQCc8P6sggLvUi5HQrrCzug)
+
+## Finance: Infrastructure Costs Donations
+
+The estimated expense to keep the platform running is 1,350 USD per month. We also will need about 1,650 USD for one off expenses plus some additional amounts for legal and registration costs. To find out more about the expected monthly and one-time expenses that will help to keep Teia operational, take a look at the [Teia Notion Finances](https://www.notion.so/Finances-c15bd7bcf7ec4a67af13d7e162dc39bb) section. (Currently there are no allocations for wages for any Teia Community individuals; at this stage everyone is volunteering their time and energy.)
+
+To cover these costs during the time that Teia is not collecting marketplace fees, we are asking the Community for donations into the following wallet (set up by Manitcor/TezTools to collect funds for their operations and go into Teia upkeep costs. You may also donate NFTs.):
+[https://tzkt.io/tz1VsAWHavM8PvJZpedLr5BWuveypGxSVJUf/operations/](https://tzkt.io/tz1VsAWHavM8PvJZpedLr5BWuveypGxSVJUf/operations/) [](https://objkt.com/profile/hereandnow-fund/owned)
+
+See the NFTs that have been donated to the wallet and are up for sale here :
+[https://objkt.com/profile/hereandnow-fund/owned](https://objkt.com/profile/hereandnow-fund/owned)
+
+(You can always help the cause by sharing and promoting the wallet and its secondary sales!)
+
+[Please see this twitter thread for more information](https://twitter.com/TeiaCommunity/status/1503725062209347584)
+[![teztooldono](https://user-images.githubusercontent.com/97635650/159349759-31b63e97-61b8-47a3-93b2-f277952fcb82.JPG)](https://twitter.com/TeiaCommunity/status/1503725062209347584)
+
+## User Interface Updates Go Live!
+
+Teia now has its own unique look! The UI changes to hicetnunc’s user interface were initially developed during the May 2021 hicathon. The UI improvements have subsequently been optimized for better readability (resolving some general design issues) while keeping true to the simplicity and stripped down feel of hicetnunc. The menu has been updated too, with an improved structure and links leading to our own Teia wiki pages. Take a look and explore the subtle changes to the interface of teia.art!
+
+![style_kit](https://user-images.githubusercontent.com/97635650/159342222-23ac52a0-f61b-4292-a4fc-8f03fad26a09.jpg)
+
+
+## DAO Development
+
+Discussions and development around our DAO are moving along. Two working groups are currently sorting out the next steps, which will be the smart-contract development and the legal registration of Teia as an entity. Those two fields are heavily intertwined and need to be developed in context of each other; for example, we plan to use the DAO tokens only for governance and not for sharing profits, since this will allow us to stay a non-profit and avoid a lot of legal issues.
+
+Another step is determining the distribution of new Teia DAO tokens (currently being referred to as tDAOs). This involves finding a balance of rewarding hDAO holders (by using a snapshot) and also rewarding recent activity on Teia when we perform the initial DAO token drop. We are hoping to create a tool to create a hDAO snapshot at a given block level, including tokens in LPs. We also need to agree on a specific formula to translate HEN/Teia users’ activity to tDAOs. You can visit the #general-dao channel of our Discord to follow along with the discussion. Once we have specific proposals, they will likely be presented to the whole community for an on-chain vote.
+
+### Registration Roadmap
+
+You can find a detailed summary of [discussion regarding the registration of the Teia DAO on this Discourse Thread](https://discourse.hencommunity.quest/t/discussion-writeup-the-legal-roadmap-for-teia-next-steps/597)
+
+The discussions indicate this possible roadmap for the incorporation of Teia forming: 
+
+1. We will put the marketplace contract live to promote swapping on that contract at 0% for a limited time (a few weeks) while using the infra donation wallet to cover the bills.
+2. Raising funds for incorporation in the RMI (the Republic Of Marshall Islands) as a DAO (through donations or through putting a marketplace fee in place for a limited time before incorporating and deciding on whether the RMI DAO incorporation is the right way to go for us).
+3. Incorporating as a DAO (potentially in RMI) ASAP with a very simple, initial governance model with our first DAO model [](https://discord.com/channels/908672304236625970/946909003185791037/951597375317737473)(see below).
+
+### DAO Smart-Contract Development
+
+Jagracar has started developing the smart-contracts needed for the tech side of Teia DAO, and the #smart-contract working group in Discord is currently discussing and improving those contract codes.
+
+So far we have created the first prototypes for the following DAO smart-contracts:
+
+DAO governance contract prototype - mixture of the multi-sig and the murmuration (Kolibri DAO) contracts:
+[https://github.com/teia-community/teia-smart-contracts/blob/jagracar/feature/dao-governance/python/contracts/daoGovernance.py](https://github.com/teia-community/teia-smart-contracts/blob/jagracar/feature/dao-governance/python/contracts/daoGovernance.py)
+
+DAO Token prototype:
+[https://github.com/teia-community/teia-smart-contracts/blob/main/python/contracts/daoToken.py](https://github.com/teia-community/teia-smart-contracts/blob/main/python/contracts/daoToken.py)
+
+DAO drop ("minter") contract prototype:
+[https://github.com/teia-community/teia-smart-contracts/blob/main/python/contracts/daoTokenDrop.py](https://github.com/teia-community/teia-smart-contracts/blob/main/python/contracts/daoTokenDrop.py)
+
+The next big challenge will be adjusting the main DAO governance contract. 
+A lot of important questions need to be answered, such as:
+
+- Does our DAO governance contract allow for one proposal and/or many proposals at the same time?
+- Which is the minimum quorum necessary to approve proposals and how will that quorum be updated after each proposal?
+- Should we use a quadratic voting model to avoid people with a lot of tokens from having too much voting power? If so how do we avoid possible [sibyl attacks](https://en.wikipedia.org/wiki/Sybil_attack), (individuals creating multiple wallets to increase their voting power)?
+- Which fraction of the votes will go to the equity representatives, and how is that list determined/updated?
+
+(All of those parameters, of course, can be adjusted over time. We will probably start with a very simple setup; and improve upon that via voting on proposals.)
+
+**Seeking: DAO and smart-contract experts to help test and design our DAO model and contracts.** Please head to the [#smart-contract](https://discord.com/channels/908672304236625970/946909003185791037) and [#general-dao](https://discord.com/channels/908672304236625970/908724855095062559) channels on Discord if you want to contribute by developing, discussing or reviewing  the smart contracts. (Talk to our smart contract dev coordinator jagracar)
+
+## Teia Interview Recording “The Swap”
+
+Last week, members of Teia were interviewed at [WiseApe](https://twitter.com/WiseApe4) and [Jesse Altmans](https://twitter.com/jesse_altman) Interview series "The Swap". You can find a recording of that on our youtube channel:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g8YPzrc5Hxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+## Monthly Traffic Statistics
+
+TezTools shared a traffic analysis report for our main site, [teia.art](http://teia.art). The data shows that Teia is getting some good traffic (see [github document archive](https://github.com/teia-community/teia-docs/blob/main/DocumentArchive/TraffiAnalytics_teia.art_TezTools_March20.pdf)) from around the world. The excerpt below shows the countries which are most active on teia.art. We would like to continue our growth across as many communities as possible, and a big part of this outreach is translating our communications into non-English languages. If you are available to volunteer as a translator, please visit the #translations channel of our Discord to assist.
+
+![trafficreport](https://user-images.githubusercontent.com/97635650/159340967-80cb3f7e-641d-4f15-8af1-3173fd6614c1.jpg)
+
+
+## This week on Discord: Community Brainstorming Exercise
+
+Help us write “The Top 10 Things You Need To Know About (Tezos NFT Platform) Teia”!
+
+This week in the Teia Community Discord Server we’re hosting a collaborative community #teia-top-10 thread/discussion about what Teia is and why it stands out in the landscape of NFT marketplaces. There are so many wonderful and unique features that make Teia special; what do you think should be included in this list? (The plan is to spend this week collaboratively drafting the Teia Top 10 List in the Teia Discord and then polish it up for blog, video, and social media distribution — to be used for outreach and grassroots marketing for Teia Community broadly.)
+
+[Here is the link to the discord thread (subthread of the #general channel)](https://discord.com/channels/908672304236625970/955535714307694672/955535716648124496)
+
+<iframe src="https://giphy.com/embed/EnF5nz7FBRkFQOWcxF" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sponge-bob-teia-community-EnF5nz7FBRkFQOWcxF">via GIPHY</a></p>
+
+## Events Updates
+
+### Ukraine Relief Gallery
+
+There have been 75 Ukraine Relief fundraiser pieces minted with the collab contract already. The Teia Community plans on promoting the initiative with a gallery page on the marketplace site, Twitter spaces, and further outreach. We will update the community once we have events/galleries set up for that.
+
+### 700k OBJKTs Milestone
+Since the last newsletter, we have passed the 700k OBJKT milestone! There is still time to mint a celebratory OBJKT. Feel free to view our “[General Tips for participating in milestone events](https://blog.teia.art/blog/teia-newsletter-002#general-tips-for-participating-in-milestone-events)” if you would like some guidance.
+
+### Fool4TEZ
+In celebration of the upcoming April Fools holiday (April 1st), the Tezos community wide event #Fool4Tez has been organized. Please see the tweet linked below for more details.
+
+[![aprilsfoolstweet](https://user-images.githubusercontent.com/97635650/159349502-38d2bad7-a760-4e31-8511-531aa32d1feb.JPG)](https://twitter.com/tezevents/status/1504412121999810563?s=20&t=towWMl9ZSXRiQ0h0paLRIw)
+
+
+## Tutorial of the Week: Collab Contract Guide
+
+[Ktorn](https://twitter.com/ktorn) created an explainer video for the collab contract feature on [teia.art](http://teia.art) . 
+This guide is a walk-through screen recording of the steps of creating a “collaborate” (collab) contract. An accompanying [written guide for the collab contract is also on the Teia wiki](https://github.com/teia-community/teia-docs/wiki/Collab-contract-Guide):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o-S6n4-cRvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
