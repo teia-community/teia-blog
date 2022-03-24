@@ -24,8 +24,14 @@ const linksData = [
     href: 'https://discourse.hencommunity.quest',
   },
   {
+    title: 'Teia.art Wiki',
+    description: `Documentation for the teia.art website.`,
+    imgSrc: '/static/images/logo.png',
+    href: 'https://github.com/teia-community/teia-docs/wiki',
+  },
+  {
     title: 'TEIA-COMMUNITY Notion',
-    description: `A public collection of resources and documentation.`,
+    description: `A public collection of resources and documentation for the Teia community.`,
     imgSrc: '/static/images/logo.png',
     href: 'https://teia-community.notion.site/teia-community/TEIA-COMMUNITY-3a21f2ddd52b40069c7809b85a7ffbf3',
   },
