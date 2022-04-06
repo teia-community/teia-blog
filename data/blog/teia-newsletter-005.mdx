@@ -1,0 +1,173 @@
+---
+title: 'Teia Newsletter #5 - 06 May 2022'
+date: 2022-04-06T23:30:00Z
+lastmod: '2022-04-06'
+tags: ['communication', 'update', 'newsletter']
+draft: false
+summary: 'Another week of working, voting, and wonky indexers: Teia is doing its thing!'
+bibliography: references-data.bib
+authors: ['merchantcoppola', 'turbulentdeterminism', 'carolyn']
+---
+
+_Another week of working, voting, and wonky indexers: Teia is doing its thing!_
+
+In this newsletter you can find info about: The upcoming objktcom swap integration, the new DAO smart contracts, some UI updates,  the current state of the finance and legal roadmap, Teias Plots of tz1and, and 10 Things you need to know about Teia. 
+
+## Cross platform swap support for Teia and objkt.com
+
+Our recent [vote about showing objktcom swaps on teia](https://vote.hencommunity.quest/vote/QmPDYWmGdxae8gUxqiPa4rkuQCc8P6sggLvUi5HQrrCzug) has concluded with an overwhelming majority of 94% (of 294 total votes) in favor of showing objktcom swaps on teia. 
+
+Developers of both marketplaces are currently working on the integration necessary to show each others’ swaps.  The code needs to be reviewed and tested, but we are confident that integration can happen within the next week. We will update you on twitter and in the next newsletter about this. We appreciate your patience as we work to make things run smoothly.
+
+Once implemented on our side, the update will look similar to this mockup, indicating which price is listed on which marketplace contract:
+
+![UIupdatesnipped](https://user-images.githubusercontent.com/97635650/162066549-484f574b-1ec5-4b29-9805-93e5a9258710.jpg)
+
+
+## Looking for product tester volunteers
+
+The developer team of teia is always looking for people that are willing to test drive new updates to the Teia marketplace. This will include: Checking for bugs in future updates, giving input on site functionality, and logging issues. You do not need to have experience with coding or web development to help with this.   
+
+If you are interested in helping with this, please go to the discord channel  “#set-your-roles” and in the [General skills category](https://discord.com/channels/908672304236625970/911779173096361984/912091691308171294) react with :dart: to get the role of “product tester”.
+
+You will be pinged and provided with a alternative URL that has a “pre-release” version of the website update, and you can just use that site in the same way that you would use [teia.art](http://teia.art) to test the upcoming update.
+
+![product_tester](https://user-images.githubusercontent.com/97635650/162066604-5fd31153-fdcd-4783-acdb-e80ecd6cfba3.jpg)
+
+## Indexer issues
+
+This week Tezos got another [upgrade with Ithaca 2](https://forum.tezosagora.org/t/ithaca-2-psithaca2/4206). As always with these upgrades, it comes with a temporary slowness on the chain; We are currently still facing minor indexer issues resulting from post-upgrade stress on the indexers. We expect these issues to fully resolve over the next days.
+
+The Teia site got updated with a warning indicator showing users when the indexer has delays: If you see this sign it means that some operations like minting, swapping and collecting might not get reflected on the User interface of [teia.art](http://teia.art) - transactions that have already happened on the blockchain are not affected by this, indexer delays only mean that the website can’t show certain info, might have probelms initiating operations (especially minting) and might not be up to date. 
+
+![warning](https://user-images.githubusercontent.com/97635650/162066624-c0ecabb5-766b-49dc-94f7-47fa01de82de.png)
+
+
+You can always check your wallet to see what Tokens you own and try using the alternative mirror [teia.rocks](http://teia.rocks) that now runs on a separate (smaller) indexer that might work better at times.
+
+## Common scams and how to avoid them
+
+Malicious hacking and phishing attacks are widespread in the cypto world, and we hate to see anyone fall victim to these. Lately, there have been a huge amount of scam attempts happening in and around our community. We are trying to collect info and share guidelines to help everyone avoid getting scammed. We are also trying to collect malware examples and analyse scam tactics to find out how those scams can be better avoided.
+
+You can find guidelines and info on common scam tactics on our [“user safety” wiki page](https://github.com/teia-community/teia-docs/wiki/User-safety). 
+
+Most importantly: **Be very careful** when syncing to a new site or signing in to a service. Always check the URL closely and don’t open files or attachments sent to you (unless you know the person and are expecting them to send you something). Pay close attention to dialog boxes related to your wallet and don’t sign transactions to unknows addresses or contracts. And never give out your wallet password or seedphrase, especially not over private message or a google form, even if the person claims to be a representative of teia, tezos, or another group.
+
+If you want to report/ask/share/discuss suspicious events or behaviour, please go to the channel “#scam-discussions” on our discord server. 
+
+## DAO development
+
+[Jagracar](https://twitter.com/jagracar) has finished the first versions of the [DAO smartcontracts](https://github.com/teia-community/teia-docs/wiki/Governance-on-Teia#dao-smart-contract-development) and deployed them to the [testnet](https://en.wikipedia.org/wiki/Testnet) so they can be safely tested and adjusted before being used on the main tezos blockchain (mainet). With the testnet versions, we can also start settig up user interfaces for the DAO tool sites, you can find [a very early test version of the UI here.](https://teia-dao.onrender.com/)
+
+Before we can initiate the distribution of Governance tokens there remain [several open questions to be resolved](https://github.com/teia-community/teia-docs/wiki/Governance-on-Teia#open-questions-and-tasks-for-the-dao-implementation); such as “how many governance tokens to mint?”, “what role will existing hDAO tokens play?”, “how will user activity on teia/HEN be weighted for additional token distribution?”, “which voting model will we use?”. 
+
+You can find an in-depth writeup of the current state of the DAO development on the [Governance on Teia article on our wiki](https://github.com/teia-community/teia-docs/wiki/Governance-on-Teia#dao-smart-contract-development) and if you have thoughts, please share them in discord or in our [discourse forum](https://discourse.hencommunity.quest/).  
+
+We are **looking for frontent Devs and UI designers** that can help developing UIs for the different sites that will be needed for our DAO governance. If you want to be involved in building these sites for the DAO, please join the #general-dao channel and the [dedicated DAO Frontend Thread](https://discord.com/channels/908672304236625970/960683387335630878/960683742551216128) on our community discord and say hello. 
+
+## Finance update
+
+Incorporating our DAO will cost a few thousand USD, which we will need to raise beforehand. We are currently in the process of finishing up a monthly budget that will be voted on with our community voting tool. 
+
+You can find the details on donations received and money spent so far as well as the draft for the monthly budget on the [“Finances” notion page](https://www.notion.so/Finances-c15bd7bcf7ec4a67af13d7e162dc39bb).
+
+We plan to set the [marketplace fees](https://github.com/teia-community/teia-docs/wiki/Marketplace-Fees) back to the original/common 2.5% of trading value as soon as we have a roadmap for incorporation and a first, simple, transitional DAO iteration that has been approved by the community (expected around early May, see below). Note that dates might shift due to the decentralised nature of the project.
+
+Before that, we still need to rely on [donations](https://github.com/teia-community/teia-docs/wiki/Marketplace-Fees#infra-cost-donations) to the Teztools [donation wallet](https://github.com/teia-community/teia-docs/wiki/Marketplace-Fees#infra-cost-donations) as it helps immensely for our team of volunteers to sort out the details for the registration and DAO implementation without having to worry about how to maintain the infrastructure. Manitcor/Teztools can provide a invoice for infra costs and withdraw those from the dedicated donation wallet. Once we switch on the marketplace fees, and our monthly budget is voted on, the multisig wallet will enact that budget.
+
+Thanks to the generous donations by teia users, we were able to pay all outstanding bills for the indexer and have already raised enough money to keep teia running until the end of April. Special thanks to FLX for his big donation of 1000 tez! 
+
+Additionally, the grants and awards team is looking into applying for a tezos foundation grant to raise money for the incorporation.
+
+### Teia registration roadmap
+
+As these questions are being discussed, we will also research the process of registering Teia as a legally acknowledged DAO with the assistance of [MIDAO Directory Services](https://twitter.com/MIDAODS). Once the details are more definite, we will prepare and share a roadmap for the DAO. [Find more details about the Legal discussion on discourse.](https://discourse.hencommunity.quest/t/discussion-writeup-the-legal-roadmap-for-teia-next-steps/597#registering-a-dao-in-the-marshall-islands-rmi-13)
+
+We want to make sure that we don’t collect any fees into the multisig wallet until we have an approved and clear roadmap to DAO registration. This is to avoid the risk of staying unregistered because of a lack of consensus.
+
+**As things currently stand, this roadmap could look something like this:**
+
+1. Vote on a possible Roadmap and on the approval of monthly Budget via the Teia community vote tool. (maybe end of April)
+2. Turn on the marketplace fee (hopefully around early/mid May)
+3. Register Teia as a LLC DAO. In order to register, we need to agree on an initial DAO setup. This could be a new multisig setup with something like 30-100 members that vote with their tezos wallet via multisig voting. Or we could use the DAO contracts mentioned above with only limited token holders before the DAO model is fully set up; this would be to make sure that the initial phase of the DAO runs smoothly. 
+4. Finishing designing the above mentioned DAO model, including initial token distribution, and use that DAO for governance of our Teia LLC.
+
+## Community tools
+
+We have updated the wiki lists of trusted [teia mirrors](https://github.com/teia-community/teia-docs/wiki/Mirror-List) and [community build tools](https://github.com/teia-community/teia-docs/wiki/Tools-made-by-the-community) around the OBJKT token ecosystem.
+
+If you know of any missing tools or mirrors that should be added, please feel free to file an [Issue at the teia docs repository](https://github.com/teia-community/teia-docs/issues).
+
+A lot of tools built for hicetnunc use hicdex, which does not support the new Teia marketplace swaps. According to hicdex developer [marchingsquare](https://twitter.com/marchingsquare), the site will probably not be updated to add this support.
+
+It is however possible to switch to a different indexer, like Manitcor’s indexer for the Teia marketplace, or to use/develop other indexers based on hicdex that support Teia swaps. Another possibility would be to use [teztok](https://www.teztok.com/) , which is currently being developed by [xat](https://twitter.com/xatxat) and provides normalised data for most tezos marketplaces including Teia/hicetnunc, objktcom, fxhash, versum and 8bidou. (Note that teztok is currently still experimental and under construction.)
+
+We want to help tool builders to integrate teia swaps: Take a look at the [article on indexer changes on our wiki](https://github.com/teia-community/teia-docs/wiki/Indexer-changes-for-Teia) and if you need further help with your project, feel free to brig your questions to the #general-dev channel in our discord.
+
+## Ukraine fundraiser Feed
+
+The Teia home page now has a “Ukraine” Feed option that will show all OBJKTs minted with the ukraine fundraiser as beneficiary. ([Find a guide on how to mint a Ukraine Fundraiser OBJKT on our wiki](https://github.com/teia-community/teia-docs/wiki/Ukranian-Fundraising#how-to-set-up-a-collaboration-contract-on-teia-for-directing-sales-to-the-initiative-contract))
+
+## the return of the &lt;/&gt;
+
+By popular demand, we have brought back the &lt;/&gt;  symbol for interactive OBJKTs on the marketplace in order to make them distinguishable from image/video OBJKTs in the feed and creation pages. In the screenshot below, you can see this symbol in the upper right of the white box.
+
+![symbol](https://user-images.githubusercontent.com/97635650/162066677-4c269937-76b0-42e2-bacb-789efc40e1ed.jpg)
+
+
+## Teia on tz1and
+
+![xf2nwFLm_400x400](https://user-images.githubusercontent.com/97635650/162066722-cc2d4b97-4f0b-4ad2-83d0-89bf11b7e4aa.jpg)
+
+
+The new kid on the virtual block is [tz1and.com](http://tz1and.com/), a digital world and NFT marketplace on Tezos. 'Tezland' has created a great deal of excitement for world builders and 3D NFT artists, providing an afforable and entry level opportunity for artists to experiment and collaborate in the metaverse. Kerfunkle, the mastermind behind Tz1and, generously offered to gift the Teia community with a place to showcase artists and collectors, however we pulled together some donations to make sure they were compensated for their amazing dev work on this project. We look forward to coming up with some clever ideas for the space in the future to highlight the diversity and breadth of talent in the Teia community!
+
+![Screenshot_2022-04-06_11 14 23](https://user-images.githubusercontent.com/97635650/162066749-ec10a247-ed30-49ae-ae46-9fe42eb75109.png)
+
+# **Top 10 Things You Need To Know About Tezos NFT Platform teia.art**
+
+In [newsletter #4](https://blog.teia.art/blog/teia-newsletter-004), we asked the community members to brainstorm the most defining things of the Teia marketplace and community, to find out more about what defines us and how we can explain teia to everyone. Here are some of the responses with input from [Denscimonk](https://twitter.com/denscimonk), [CaRoLyN](https://twitter.com/CarolynM8ri3), [malicioussheep56](https://twitter.com/malsheep56), [mel](https://twitter.com/melmassadian), [Theo_H](https://twitter.com/THorsmeier), [Nagualito](https://twitter.com/nagualbox), [Mumu](https://twitter.com/mumu_thestan) 
+
+for further refernce for the defining values of Teia, see our [core values manifesto and code of conduct](https://github.com/teia-community/teia-docs/wiki/Core-Values-Code-of-Conduct-Terms-and-Conditions)
+
+1.	**Truly Open-Source/Decentralized**
+
+>Capacity to engage a large web of participants worldwide to act locally and globally.
+
+2.	**Low Barriers of Entry and Transaction Fees**
+
+>Low cost; high accessibility; no layer-2 solutions needed.
+
+3.	**Support for Wider and Niche File Types**
+
+>Audio, visual, code, and game NFTs are all supported and displayed together.
+
+4.	**Priority Given to Regional and Local Equity Models**
+
+>Prioritizing diversity, inclusivity, equity, and accessibility through the Teia Community organizational structure and Teia.Art platform.
+
+5.	**Clean NFTs**
+
+>TEIA uses the Tezos network which consumes approximately the [average energy footprint of 17 global citizens.](https://tezos.com/carbon/)
+
+6.	**DAO and On-Chain Voting**
+
+>Formation of DAO ongoing; on-chain voting for decisions about major platform changes and roadmap.
+
+7.	**Resilient Community**
+
+>Proven track record of recovering rapidly from catastrophic interruption of platform operations.
+
+8.	**Organic Art and Music Community**
+
+>Value-based grassroots culture.
+
+9.	**Verified Collabs and Royalty Splits**
+
+>Collaborative smart-contracts native to the platform allows for independent artists to collaborate easily and reliably with each other in a secure way.
+
+10.	**Random Browsing Function ON THE HOMEPAGE**
+
+>Leveraging the power of random functions to break out of siloed browsing and discovery.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hO97qco-ZX4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
