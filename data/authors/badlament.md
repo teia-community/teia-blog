@@ -1,6 +1,6 @@
 ---
 name: The Badlament
-avatar: /static/images/logo.png
+avatar: 
 occupation: culture, outreach, equity, finances
 twitter: https://twitter.com/Thebadlament
 teia: https://teia.art/thebadlament
