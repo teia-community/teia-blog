@@ -1,0 +1,189 @@
+---
+title: 'Teia Newsletter #6 - 23 April 2022'
+date: 2022-04-23T23:30:00Z
+lastmod: '2022-04-23'
+tags: ['communication', 'update', 'newsletter', 'swap', 'copymint']
+draft: false
+summary: 'fighting copyminters, nature in the metaverse, talking robots and seizing the means of distribution'
+bibliography: references-data.bib
+authors: ['merchantcoppola', 'malicioussheep', 'badlament', 'turbulentdeterminism']
+---
+_fighting copyminters, nature in the metaverse, talking robots and seizing the means of distribution_
+
+In this edition of the newsletter we have information about the crossmarket compatibility of Teia swaps, the activation of teias own copymint team, Indexer news, a call for dev volunteers and DAO testers, and quite a few events and exibitions coming up, looking for participation. 
+
+There is so much going on, that we even added a table of contents to the newsletter:
+
+<TOCInline toc={props.toc} asDisclosure toHeading={3} />
+
+## The State of the Swap
+
+### The Teia/Objktcom Swap Integration is Live!
+
+The mutual integration of FA2 OBJKT swaps between Teia and Objktcom has been live since April 9th! This means that if you swap your Tokens on Teia, the listings will appear on Objktcom and Teia.
+
+Teia now supports three swapping contracts: In order for your listings to appear on the Teia marketplace, you can swap your FA2 OBJKT Tokens (minted on teia/hicetnunc/hic.af) on either Teia, [objkt.com](http://objkt.com), hicetnunc, or marketplaces built from the hicetnunc core like hic.af. 
+
+### Confused About Which Marketplace Shows What? You Are Not Alone!
+
+Do my tokens still show up on hicetnunc.xyz? Do you show collections minted on OBJKT now? What about HEN swaps? 
+
+There is a lot of understandable confusion around cross marketpace compatibility of Tezos NFTs. 
+
+**Here are some articles and resources to answer most of those questions and explain the current situation:**
+
+- [Mumu](https://twitter.com/mumu_thestan)’s explanatory Twitter Thread explaining the difference between the contracts used by Teia and how the Teia/Objkt integration works (beginner friendly): [https://twitter.com/mumu_thestan/status/1512934663664578560](https://twitter.com/mumu_thestan/status/1512934663664578560)
+- [Crcdng](https://twitter.com/crcdng)’s [compatibility sheet](https://docs.google.com/spreadsheets/d/11xbk3V2SfdpSSSGfkz3Tr3I2ikPEaOFAX8khX4zDvhA/edit?usp=sharing) where you can look up which marketplace supports which token type and which swaps show up on which marketplace:
+- The Teia [Wiki article on that subject with background info and a list of swap compatibility](https://github.com/teia-community/teia-docs/wiki/Visibility-of-Teia-swaps)
+
+![https://user-images.githubusercontent.com/97635650/163869147-d12102b0-5c54-4778-90e1-ad8db4372581.JPG](https://user-images.githubusercontent.com/97635650/163869147-d12102b0-5c54-4778-90e1-ad8db4372581.JPG)
+
+### Tool to Batch Cancel/Migrate Swaps Between Contracts
+
+Thanks to [NFTBiker](https://twitter.com/NFTBiker), a helpful [tool for batch unswap/reswap](https://nftbiker.xyz/swap/reswap) is now available with Teia as an option! 
+
+With this tool, you can move multiple pieces onto the new contract in bulk transactions which makes reswapping easier than ever! 
+
+This works for both artists wanting to move their primary swaps and collectors who want to bring their secondary swaps onto the new contract:
+[https://nftbiker.xyz/swap/reswap](https://nftbiker.xyz/swap/reswap#)
+
+### #TeiaSwapParty
+
+With our new swap contract enabled, Teia’s fees temporarily set to 0%, and the visibility of Teia’s swaps on objktcom activated, it's the perfect time for a #TeiaSwapParty!
+
+Swap your pieces onto the new contract and share them using the hashtag #TeiaSwapParty to get fresh eyes on your work! Share your favourite thing about Teia, tell your friends about the event (maybe share your favourite piece of theirs)! Let's make this a fun event for everyone!
+
+## Teia’s Copymint Operations Have Officially Started
+
+Teia now has its own [list of restricted wallets](https://github.com/teia-community/teia-report/blob/main/restricted.json) (previously the list was managed by the hicetnunc team). We copied over the list of restricted wallets on hicetnunc and are now moderating our own list of restricted wallets. There is the new channel #💣report-copyminters on the Teia Discord server, that can be used to report suspected copyminters or ask for your account to be unrestricted. Please provide links to the suspected account and artwork as well as proof of copyminting and the team will investigate.
+
+If you haven't yet, please make sure to check out the [Terms and Conditions page on our wiki](https://github.com/teia-community/teia-docs/wiki/Core-Values-Code-of-Conduct-Terms-and-Conditions#3-terms-and-conditions---account-restrictions) to learn about how restricted accounts work. 
+
+To read some general tips on how to avoid collecting copymints, check out the [wiki article “collecting NFTs safely”](https://github.com/teia-community/teia-docs/wiki/Collecting-NFTs-Safely).
+
+## Meet the New Teia Answer Bot
+
+Has your account has been restricted, and you want to quickly find out why? Is your latest mint not showing up on your page, and you want to find out if it’s an indexer issue? Our new “Teia Answer Bot” is a never sleeping little helper that can answer these questions. To access it, go to the channel  #teia-answer-bot on our [Discord server](https://discord.gg/US8gMfEkM2) (located in the “Informations” section of the sidebar) and use the following commands:
+
+### Answer Bot Commands
+
+- check why a OBJKT/account was restricted with the command `?restricted <account or OBJKT ID>`
+- check if Teia’s and TzKT’s indexers are up to date, or see if there are issues with the marketplace type *`?status`*
+- ask the bot your questions: *`?ask <question>`* (this feature is still pretty experimental, but it gets better day by day)
+
+## Tales from the Git
+
+### Frontend Devs, Unite!
+
+Teia has changed a lot over the last few weeks: collab contract implementation, friends feed, UI updates, a new swap contract, logos, marketplace swap integrations, and many more.
+
+But there are always a lot of new ideas and features that are waiting to be developed and implemented.
+
+At the moment, we are looking for volunteers (mainly frontend devs) that are interested in further developing the Teia Marketplace and setting up a proper UI for our upcoming DAO governance tools. We are also looking for disability accessibility focused devs to implement some accessibility improvements.
+
+We also have smaller tasks for devs that are new to the Teia codebase. These tasks are ideal for newcomers to familiarize themselves with the code, and for devs who have limited time to contribute. You can find “beginner friendly tasks” on our [github issues page by filtering by the tag “good first issue”](https://github.com/teia-community/teia-ui/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+
+Every pull request helps and is appreciated! 
+
+If you are interested, come to the [teia Discord](https://discord.gg/US8gMfEkM2) dev channels and say hello. Feel free to ask any questions if you want to pick up tasks and need help getting started. The people there will be happy to help you!
+
+### Indexer Maintenance
+
+Since the [Ithaca 2 upgrade of the Tezos blockchain](https://forum.tezosagora.org/t/ithaca-2-psithaca2/4206), all hicdex indexers are facing new challenges and need to be updated in order to run smoothly. (The hicdex codebase is used by hicetnunc, teia, [hic.af](http://hic.af), and other platforms that have sprung up from hicetnunc.)
+
+Currently we have a small team of devs working hard on updating Teia's main indexer `api.teia.art` so that it can provide a stable experience for Teia users. This update will take a few more days.
+
+Fortunately, [Zir0H](https://twitter.com/Zir0h) has made his privately run indexer [`api.teia.rocks`](http://api.teia.rocks) available to the main teia marketplace as well as to hic.af. This will allow Teia to have up to date info while the indexer team gets the main indexer up and running again. (It was offered to hicetnunc, too but hicetnunclab2000 has opted not to use it.)
+
+## DAO Development Update
+
+We are further progressing with the DAO tool and contract development. We now have all the DAO smart contracts set up with an alpha version of user interface. We are still in the process of deciding on possible Token distribution models. For more detailed info about the DAO model check out the [wiki article “Governance on Teia”](https://github.com/teia-community/teia-docs/wiki/Governance-on-Teia)
+
+You can take a look at the DAO tools here: 
+
+- [https://teia-dao.onrender.com/](https://teia-dao.onrender.com/) (the main DAO UI)
+- [https://teia-representatives.onrender.com/](https://teia-representatives.onrender.com/) (for the representative voters)
+- [https://teia-multisig.onrender.com/](https://teia-multisig.onrender.com/) (for the DAO admins and guardians)
+
+### Looking for DAO Testers
+
+With the first simple UIs finished, we are now starting to test these DAO tools on the tezos Ithaca [testnet](https://en.wikipedia.org/wiki/Testnet), and looking for people interested in testing and fine tuning the DAO tools.  
+
+The ithaca testnet is a separate instance of the Tezos blockchain set up for testing dAPPs before actually using them on the mainnnet (the actual blockchain) where you can claim (valueless) Tezos Tokens via a [Faucet bot](https://t.me/tezos_faucet_bot) for free.
+
+If you would like to help, please set up a tezos wallet on the Ithaca testnet. For security reasons it makes sense to set up a completey new tezos wallet for the testnet via the [testnet faucet](https://teztnets.xyz/ithacanet-faucet) and pass the wallet address over to [Jagracar](https://twitter.com/jagracar) so he can send you some testnet DAO tokens.
+
+Then you can sync that testnet wallet to the [DAO tools](https://teia-dao.onrender.com/) and should be set up to vote on and create new proposals on the testnet DAO and test drive the tools and learn how everything works.
+
+### Help Deciding the Token Distribution
+
+One of the first thing we will need before using the DAO tools for the actual governance is well distributed DAO tokens. There have been several varying proposals on how to distribute our DAO tokens. Currently we are discussing how we should set up the parameters for rewarding historical activity on the HEN/Teia ecosystem with DAO tokens. There are a lot of possible routes to go there and it would be great to have as many people participating in setting the distribution formulas up. 
+
+Of course, there is still the question of whether and how exactly we should give out Teia DAO tokens for held hDAO tokens. It will probably come down to a community vote on a few different distribution setups.
+
+### Frontend Devs and Interface Designers Wanted
+
+As you can see, the current DAO UIs are only first versions and could use some further design and interface development. Teia is currently looking for interested frontend devs that want to help shape the DAO UI sites and help implement some upgrades and functionality. We also need to set up a Token claim page. If you are a dev interested in helping out, please head to the #general-DAO channel and say hello.
+
+### Legal Registration
+
+In order for us to collect fees and put the DAO into action, the legal team is working on a legal registration roadmap that will be put up for a vote along with the first budget before activating.
+
+Currently registering the DAO on the Marshall Islands seems very promising. We would need at least one person to do KYC for the registration, but not every member of the DAO. It makes sense to go with a very simple pre-DAO model for the initial registration, either using the DAO smartcontracts right away or - if we need more time to set up the DAO - work with a multisig setup before handing over the official governance to the DAO smartcontract.
+
+## Teia in Tz1and
+
+Teia now has its own plots on [Tz1land](https://www.tz1and.com/), a 3D digital world built on the Tezos blockchain; Currently these places are secured for the Teia community (click link to visit): [426](https://www.tz1and.com/explore?placeid=426), [427](https://www.tz1and.com/explore?placeid=427), [428](https://www.tz1and.com/explore?placeid=428), [429](https://www.tz1and.com/explore?placeid=429), [430](https://www.tz1and.com/explore?placeid=430), [431](https://www.tz1and.com/explore?placeid=431) and [474](https://www.tz1and.com/explore?placeid=474)!
+
+We are currently discussing and planning how to best use these spaces to the benefit of the community; Dedicated virtual spaces for Equity and Regional community galleries and events are in the planning stages, as well as a more general community hub in the largest plot.
+
+You can find the current state of the project on the [Teia Tz1land notion page](https://www.notion.so/Tz1and-Teia-Places-dc8338ca5a1a48e1a779db9e27faa56c).
+
+If you are an avid 3D builder or are interested in the development of these spaces, hop into the #teia-tz1and-worlds channel (under the “Culture/Equity” section of the sidebar) in the [Teia Discord](https://discord.gg/US8gMfEkM2) to contribute to the conversation. 
+
+We have also set up a #⚪tz1and-3d-objkt-shill channel on the Teia Discord server to share your 3D objkts. You may even find a few 3D objkts created by community members available for free!
+
+## Events, Events, Events!
+
+### Flora | Fauna Exhibition #2
+
+Speaking of Tz1and, [CleanNFTs](https://twitter.com/clean_nfts) are joining forces with Teia and [Tz1and](https://www.tz1and.com/) to present Flora | Fauna #2, a community exhibition hosted on Place #474. Call for submissions opened on Earth Day - April 22 and will be open for one week. Flora or Fauna themed work only. Items can be 3d models or stills in frames (1 submission per person only). 
+
+Submit your Flora | Fauna themed work with this [submission form](https://forms.gle/ouVjPmAWytbDxtGw6) 
+
+![FloraFauna_Flyer](https://user-images.githubusercontent.com/97635650/164912145-7832fd98-0f15-4653-bf5f-4a1703974ef8.png)
+
+
+### Teia at NFT Show Europe
+
+Community member [Sutan](https://twitter.com/Creepyto) brought this event to our attention. NFT Show Europe is looking for speakers and gallery participants from the Teia community. This is a great opportunity to showcase our incredible diversity of artists & artworks and to share the wonderful features of Teia with the European NFT community. 
+
+The event will happen on Sept 17th and 18th, 2022 in Valencia, Spain.
+
+More information is available at the event’s website: [https://nftshoweurope.com](https://nftshoweurope.com/)
+
+If you are unable to attend in person, virtual options for participating are available, particularly for Disabled and similarly marginalized community members who face barriers. The Teia community is actively seeking **Equity and Regional representation** for this event! Join the conversation in the #general-culture-equity channel in [Teia Discord](https://discord.gg/US8gMfEkM2) (under the “Culture/Equity” section of the sidebar). Also, please [fill out this google form](https://docs.google.com/forms/d/e/1FAIpQLSdhxkkWmE04Sc_l8ld82cL9LuTipEYlRVu7rrXdOkkP-J5PBA/viewform) if you are interested in attending or participating!
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🌍Welcome to <a href="https://twitter.com/hashtag/NFTSE22?src=hash&amp;ref_src=twsrc%5Etfw">#NFTSE22</a>.<br><br>A place where NFT, Crypto, Blockchain and Digital Art meet.<br><br>A moment in space and time where we build the future together.<br><br>🗓️Save the date: 17-18th September - Valencia, Spain.<br><br>➕<a href="https://t.co/QzDiHUDkf7">https://t.co/QzDiHUDkf7</a><a href="https://twitter.com/hashtag/crypto?src=hash&amp;ref_src=twsrc%5Etfw">#crypto</a> <a href="https://twitter.com/hashtag/nftcommunity?src=hash&amp;ref_src=twsrc%5Etfw">#nftcommunity</a> <a href="https://twitter.com/hashtag/blockchain?src=hash&amp;ref_src=twsrc%5Etfw">#blockchain</a> <a href="https://twitter.com/hashtag/digitalart?src=hash&amp;ref_src=twsrc%5Etfw">#digitalart</a> <a href="https://t.co/qLlSUPGurL">pic.twitter.com/qLlSUPGurL</a></p>&mdash; NFT Show Europe (@nftshoweurope) <a href="https://twitter.com/nftshoweurope/status/1511652434589880323?ref_src=twsrc%5Etfw">April 6, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+### Preparing for NFTNYC
+
+If you are planning on attending [NFTNYC](https://www.nft.nyc/) in person or virtually, either as a host or a participant at any of the events, please head to the #**events-planning** channel on the teia discord to connect. There are many peripheral events being planned, so if you know of some, let us know so we can get Teia community members involved! 
+
+## Let’s Make Some Culture!
+
+### Teia Regional and Specialty Groups
+
+We are always on the lookout for regional and medium specific communities that mint on Teia, so that we can continue to boost your efforts and co-develop events together! If you are part of one of these groups, please let us know in the Discord in #representatives channel (under the “Culture/Equity” section of the sidebar)
+
+### Collectors Collective
+
+One of the critical components of both Teia and the health of the Tezos ecosystem is active participation of dedicated collectors who care about the artists they collect from. Fostering strong Collector and Artist relationships helps to build foundations for growth for both parties. [Crcdng](https://twitter.com/crcdng) and [Jovi](https://twitter.com/Jovinft) have been active in developing ideas for events and compiling resources for collectors, including efforts to bring new collectors to Teia. 
+
+If you are a collector, please join the #collector-collective channel in the Discord (under the “Communities” section of the sidebar) to contribute to developing the culture of collecting on Teia!
+
+### Teia Community Twitter Curation
+
+The [@teia.art](https://twitter.com/TeiaArt) curation is an ongoing effort to give Teia community artists and collectors an opportunity to curate artists and artwork from Teia. So far, there have been 25 guest curators who have showcased the diversity of artists and mediums to great success! 
+
+Applications to curate are currently closed, but will be announced when they are reopened. There are many hidden gems on Teia; check out the ongoing curation on Twitter to find pieces that you connect with and don’t forget to follow and activate notifications for [@teia.art](https://twitter.com/TeiaArt)
