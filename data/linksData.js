@@ -21,7 +21,7 @@ const linksData = [
     title: 'Teia Discourse',
     description: `A forum space for long form discussion and planning.`,
     imgSrc: '/static/images/discourse-rectangle.png',
-    href: 'https://discourse.hencommunity.quest',
+    href: 'https://discourse.teia.art',
   },
   {
     title: 'Teia.art Wiki',
