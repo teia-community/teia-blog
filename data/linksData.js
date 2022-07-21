@@ -21,7 +21,7 @@ const linksData = [
     title: 'Teia Discourse',
     description: `A forum space for long form discussion and planning.`,
     imgSrc: '/static/images/discourse-rectangle.png',
-    href: 'https://discourse.hencommunity.quest',
+    href: 'https://discourse.teia.art',
   },
   {
     title: 'Teia.art Wiki',
@@ -33,7 +33,8 @@ const linksData = [
     title: 'TEIA-COMMUNITY Notion',
     description: `A public collection of resources and documentation for the Teia community.`,
     imgSrc: '/static/images/logo.png',
-    href: 'https://teia-community.notion.site/teia-community/TEIA-COMMUNITY-3a21f2ddd52b40069c7809b85a7ffbf3',
+    href:
+      'https://teia-community.notion.site/teia-community/TEIA-COMMUNITY-3a21f2ddd52b40069c7809b85a7ffbf3',
   },
   {
     title: '@teiacommunity',
@@ -63,7 +64,8 @@ const linksData = [
     title: 'Submit A Link',
     description: `Is there an important link we're missing? This is a community powered project and a community powered website, add a link by submitting a PR to our GitHub (it's easy!), or create an issue to provide the info for someone else to add it.`,
     imgSrc: '/static/images/github-rectangle.jpg',
-    href: 'https://github.com/teia-community/teia-blog/issues/new?assignees=&labels=&template=submit_link.md&title=',
+    href:
+      'https://github.com/teia-community/teia-blog/issues/new?assignees=&labels=&template=submit_link.md&title=',
   },
 ]
 

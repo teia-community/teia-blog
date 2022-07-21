@@ -12,38 +12,30 @@ authors: ['merchantcoppola']
 _first issue of the new teia newsletter. all news, all lower case_
 **(find a spanish translation below)**
 
-# English version 
- 
+# English version
 
-welcome to the teia newsletter  
+welcome to the teia newsletter
 
-from now on i won't call these (somewhat) regular writeups of the state of the project "discord recaps" anymore and will try to stick to newsletter because i will try to bring together infos from various comms channels here.  
+from now on i won't call these (somewhat) regular writeups of the state of the project "discord recaps" anymore and will try to stick to newsletter because i will try to bring together infos from various comms channels here.
 
-also: if anyone wants to write a newsletter or contribute to it it, that would be awesome. it would be great to get some more diverse points of view. I am doing this mainly because people asked for writeups and i try to keep an overview anyways. but if its only one person writing these, it might be a very narrow view onto everything. feel free to contact me ([@MerchantCoppola](https://twitter.com/MerchantCoppola)).  
-  
+also: if anyone wants to write a newsletter or contribute to it it, that would be awesome. it would be great to get some more diverse points of view. I am doing this mainly because people asked for writeups and i try to keep an overview anyways. but if its only one person writing these, it might be a very narrow view onto everything. feel free to contact me ([@MerchantCoppola](https://twitter.com/MerchantCoppola)).
 
-## teia launch  
+## teia launch
 
 a lot has happened in the last week. on 2/2/22 we started the teia "soft launch" with introducing our new main domain "[teia.art](https://teia.art/)" and with it a rotating logo: on each site refresh a random logo gets displayed from a pool of submissions. you can find an overview of all the logos on the [logo viewer](https://teia.vercel.app/)
 
-this is supposed to be in place until we decide on a final logo solution, but it is also possible to keep the rotating logos if the community wants that. also: as of now there is no deadline to 
-[submit new logos via the google form](https://docs.google.com/forms/d/e/1FAIpQLSe27ZughzLlh44BQXjrXto4b9qRTAB9SX-d-YMTCUPYdD6lRg/viewform)  
+this is supposed to be in place until we decide on a final logo solution, but it is also possible to keep the rotating logos if the community wants that. also: as of now there is no deadline to
+[submit new logos via the google form](https://docs.google.com/forms/d/e/1FAIpQLSe27ZughzLlh44BQXjrXto4b9qRTAB9SX-d-YMTCUPYdD6lRg/viewform)
 
-you can find the [launch info article](https://hencommunity.quest/blog/teia-art-launch-announcement) with a lot of info on the current state of the project and our on our blog. 
-[alex crouwers](https://twitter.com/acrwrs) and [turbulent determinism](https://twitter.com/turbulentdeterm) finished the   [official launch pressrelease](https://hencommunity.quest/blog/teia-launch-press-release)  that will be sent out to press contacts and can be used for reference. if you know news/press contact or want to help spread the word, pls hop onto the #pr-communication channel on our discord.  
+you can find the [launch info article](https://hencommunity.quest/blog/teia-art-launch-announcement) with a lot of info on the current state of the project and our on our blog.
+[alex crouwers](https://twitter.com/acrwrs) and [turbulent determinism](https://twitter.com/turbulentdeterm) finished the [official launch pressrelease](https://hencommunity.quest/blog/teia-launch-press-release) that will be sent out to press contacts and can be used for reference. if you know news/press contact or want to help spread the word, pls hop onto the #pr-communication channel on our discord.
 
 our next celebratory date will be 22/2/22 - we work on having a few more features ready for that and maybe the community has some ideas for launch events, hastags, celebrations we could use to celebrate the launch. bring your ideas to the #events channel on our discord.
 
-    
-
 ## The new smartcontract
 
-  
-
-teia uses the same minting contract as hicetnunc. this means OBJKTs minted on teia will show up on all marketplaces that support hen OBJKTs (i.e. objkt.com, rarible, hic.af, etc). 
+teia uses the same minting contract as hicetnunc. this means OBJKTs minted on teia will show up on all marketplaces that support hen OBJKTs (i.e. objkt.com, rarible, hic.af, etc).
 currently we still use the hicetnunc v2 swapping contract. this means that platform fees from collects both on teia and hicetnunc still get directed to the wallet of hicetnunc. in order to collect our own platform fees, [jagracar](https://twitter.com/jagracar) has written and completed a new swapping contract for teia and a multisignature contract that makes it possible to manage the collected fees collectively. Those two new smartcontract have now passed the audit.
-
-  
 
 [official smartcontract announcement on twitter](https://twitter.com/TeiaCommunity/status/1490285938047651840?s=20&t=kojgwlsJpSGO2fNKhcE05Q)
 
@@ -51,86 +43,51 @@ currently we still use the hicetnunc v2 swapping contract. this means that platf
 
 [the full audit report on github](https://github.com/InferenceAG/ReportPublications/blob/master/Inference%20AG%20-%20Teia%20community%20-%20marketplace%20&%20multisig%20-%20v1.0.pdf)
 
-  
-  
-  
-
 ## swapping contract support
 
-  
+with the new smart contract we need to decide how and if we are going to show other swaps (listing prices) of OBJKTs. there are multiple paths we can go: do we show swaps of platforms that show our swaps? do we show all OBJKT swaps and try to position teia as the "platform where you can find all OBJKT prices on one site?” or do we want to only show teia swaps? all these options have certain implications for the usability and positioning of teia in the tez ecosystem.
 
-with the new smart contract we need to decide how and if we are going to show other swaps (listing prices) of OBJKTs. there are multiple paths we can go: do we show swaps of platforms that show our swaps? do we show all OBJKT swaps and try to position teia as the "platform where you can find all OBJKT prices on one site?” or do we want to only show teia swaps? all these options have certain implications for the usability and positioning of teia in the tez ecosystem.  
+the communication with objktcom has started on that, probably the same discussions will come up with other platforms soon.
 
-the communication with objktcom has started on that, probably the same discussions will come up with other platforms soon.  
+[read and discuss the swap support on discourse ](https://discourse.teia.art/t/teia-art-swaps-and-objkt-com/581)
 
-[read and discuss the swap support on discourse ](https://discourse.hencommunity.quest/t/teia-art-swaps-and-objkt-com/581)  
-
-  
 note that this discussion is **not** about showing other tokens minted on other contracts, like tokens minted on objktcom or versum. those are all different minting contracts and we aren't able to display those, at least for now.
-
-  
 
 ## roadmap
 
-  
+[badlament](https://twitter.com/Thebadlament) started updating our [notion page](https://teia-community.notion.site/TEIA-COMMUNITY-3a21f2ddd52b40069c7809b85a7ffbf3): there is now an [updated roadmap](https://teia-community.notion.site/8d36022f07d24869b718f225183c92d0?v=6f41db61ab604f6895161502abcaf549) and the [current version of our code of conduct.](https://teia-community.notion.site/Code-of-Conduct-Terms-Conditions-Core-Values-b79fc969a66246f18706be742d2e7baf)
 
-[badlament](https://twitter.com/Thebadlament) started updating our [notion page](https://teia-community.notion.site/TEIA-COMMUNITY-3a21f2ddd52b40069c7809b85a7ffbf3): there is now an [updated roadmap](https://teia-community.notion.site/8d36022f07d24869b718f225183c92d0?v=6f41db61ab604f6895161502abcaf549) and the [current version of our code of conduct.](https://teia-community.notion.site/Code-of-Conduct-Terms-Conditions-Core-Values-b79fc969a66246f18706be742d2e7baf) 
-  
-we started a page to list the people that are currently actively working in the different working groups. the plan is to merge these lists with the planned guilds and the org structure proposed by [malicious sheep](https://twitter.com/malsheep56) and [babycommando](https://twitter.com/BabyCommando_). we need to get our working groups sorted, this will also be a first step towards setting up core teams/guilds for our organisation-structure.  
-  
+we started a page to list the people that are currently actively working in the different working groups. the plan is to merge these lists with the planned guilds and the org structure proposed by [malicious sheep](https://twitter.com/malsheep56) and [babycommando](https://twitter.com/BabyCommando_). we need to get our working groups sorted, this will also be a first step towards setting up core teams/guilds for our organisation-structure.
+
 in general now that working groups seem to have formed we need to find better ways to improve communication between those groups and start bringing in volunteers from our [volunteer submission form](https://docs.google.com/forms/d/1qEsPN5njEE9fNdSM1zjetIYGYTSuMpjPl446nG1FvNY/viewform?edit_requested=true) - we currently have 40 people that are waiting for assignments!
-
-  
 
 ## dev department
 
-  
-
 currently the Dev channels are working on preparing our [community githup repository](https://github.com/teia-community) to be deployed (at the moment [manitcors](https://twitter.com/TezTools) [hicetnunc git is the one we use](https://github.com/IntegroLabs/hicetnunc/)) for this transition, repos need to be cleaned up, changes need to be synced, etc.
- 
 
-## UI/UX  
-  
+## UI/UX
+
 [synkitty](https://twitter.com/Synkitty0) shared a [doc that summarizes some rules we should keep in mind to keep to our vision of accessibility](https://docs.google.com/document/d/1W94d6BfuVJMQROqCC4Mgs0BBP4T61zlnIdzm2bYVbnI/edit?usp=sharing). not only interesting for UI devs but also a good read for everyone that contributes.
-  
 
 there are UI improvements that have been developed during the hicathon that could be implemented rather easily if wanted. you can have a look at the[ hicathon UI WG presentation](https://www.figma.com/proto/R5sw1HcoHx4Aup1Yl7rGYA/WG-UI%2FUX?page-id=0%3A1&node-id=1473%3A12670&viewport=241%2C48%2C0.03&scaling=contain).
 
-  
-  
-
 more UI requests include: option to filter out certain tags, masonry view, bring back the logo marking interactive pieces, switching between a minimal/zen UI mode and a more detailed “full” mode with price tags and the list goes on.
-
-  
 
 denscimonk shared some [ideas on what could be done next on discord](https://discordapp.com/channels/908672304236625970/909363941283598336/940393550200316005)
 
-  
-  
-  
 the question remains how and if we should vote on every change or let the UI team proceed a little. another idea would be to use one of the mirrors to test things without votes and let people check it out. [https://discord.com/channels/908672304236625970/909363941283598336/909508812325658655](https://discord.com/channels/908672304236625970/909363941283598336/909508812325658655)
-
-  
 
 ## @TeiaArt - twitter account for community art curation
 
-  
-
 while we were saving domains and handles during the last voting round, community members saved a lot of teia-realted twitter handles. our main announcement handle now is [@TeiaCommunity.](https://twitter.com/TeiaCommunity)
-
-  
 
 [qizzio](https://twitter.com/qizzio) and [mumuthestan](https://twitter.com/mumu_thestan) developed the idea to use another handle, [@teiaart](https://twitter.com/TeiaArt), for a shared curation experiment: every day a new community member gets access to the account via tweetdeck and can share, quote retweet art or write art curation threads. the number of applications after the first announcement was so high, the form needed to be closed for now unfortunately - but it will be reopened eventually.
 
-
-[read more on the community curation with a lot of translations:](https://discourse.hencommunity.quest/t/teiaart-guest-community-curator-with-translations/577)
-
-
-
+[read more on the community curation with a lot of translations:](https://discourse.teia.art/t/teiaart-guest-community-curator-with-translations/577)
 
 # Spanish version (Traducción: @santiagoitzcoat)
 
-_primer número de la nueva newsletter de teia. todas las noticias, todas en minúsculas_ 
+_primer número de la nueva newsletter de teia. todas las noticias, todas en minúsculas_
 
 bienvenidx a la newsletter o boletín de **_teia_**
 
@@ -146,7 +103,7 @@ Así que no duden en ponerse en contacto conmigo [MerchantCoppola](https://twitt
 
 Han pasado muchas cosas en la última semana.
 
-El 2/2/22 comenzamos el "soft launch" de_teia_ con la presentación de nuestro nuevo dominio principal “[teia.art](https://teia.art/)” y con él, un logotipo rotatorio: donde en cada recarga del sitio, se muestra un logotipo aleatorio desde un conjunto de propuestas enviadas.
+El 2/2/22 comenzamos el "soft launch" de*teia* con la presentación de nuestro nuevo dominio principal “[teia.art](https://teia.art/)” y con él, un logotipo rotatorio: donde en cada recarga del sitio, se muestra un logotipo aleatorio desde un conjunto de propuestas enviadas.
 
 (Puedes encontrar una descripción general de todos los logotipos en el [logo viewer](https://teia.vercel.app/))
 
@@ -157,7 +114,7 @@ Ojo: a partir de ahora no hay fecha límite para [enviar nuevos logotipos a trav
 También pueden encontrar en nuestro blog [un artículo con la información del lanzamiento](https://hencommunity.quest/blog/teia-art-launch-announcement) y con mucha información sobre el estado actual del proyecto y el nuestro.
 
 [alex crouwers](https://twitter.com/acrwrs) y [turbulent determinism](https://twitter.com/turbulentdeterm) terminaron el [comunicado de prensa del lanzamiento oficial](https://hencommunity.quest/blog/teia-launch-press-release) que se enviará a los contactos de prensa y que se puede usar como referencia.
-  
+
 Si tú conoces noticias/contactos de prensa o deseas ayudar a correr la voz, ingresa al canal #pr-communication en nuestro Discord. -
 
 Nuestra próxima fecha de celebración será el 22/2/22: estamos trabajando para tener algunas nuevas funcionalidades listas para entonces, tal vez la comunidad pueda proponer ideas para los eventos de lanzamiento, hashtags, y otras maneras de celebrar el lanzamiento.
@@ -172,7 +129,6 @@ Actualmente todavía utilizando el contrato de swap de Hicetnunc-v2. esto signif
 
 Para poder cobrar nuestras propias tarifas en la plataforma, [jagracar](https://twitter.com/jagracar) ha redactado y concluido un nuevo contrato de swap para teia y también un contrato multifirma que permite gestionar las tarifas recaudadas de forma colectiva. Esos dos nuevos contratos inteligentes ya se han aprobado en una auditoría.
 
-
 [anuncio oficial de contrato inteligente en twitter](https://twitter.com/TeiaCommunity/status/1490285938047651840?s=20&t=kojgwlsJpSGO2fNKhcE05Q)
 
 [descripción general sobre los nuevos contratos inteligentes está en nuestro blog](https://blog.teia.art/blog/introducing-henc-smart-contracts)
@@ -185,7 +141,7 @@ Con el nuevo contrato inteligente, debemos decidir cómo y si es que vamos a mos
 
 La comunicación en objkt.com ha comenzado ha hablar de eso y probablemente las mismas discusiones surgirán pronto en otras plataformas.
 
-[lee y discute sobre el soporte de swaps en nuestro Discord](https://discourse.hencommunity.quest/t/teia-art-swaps-and-objkt-com/581)
+[lee y discute sobre el soporte de swaps en nuestro Discord](https://discourse.teia.art/t/teia-art-swaps-and-objkt-com/581)
 
 Toma en cuenta que esta discusión no se trata sobre mostrar otros tokens minteados en otros contratos, como tokens minteados en objkt.com o versum. Todos esos son contratos de minteo diferentes y no podemos mostrarlos, al menos por ahora.
 
@@ -227,8 +183,4 @@ Mientras registrábamos dominios web y cuentas en redes durante la última ronda
 
 El número de solicitudes después del primer anuncio fue tan alto que, lamentablemente, el formulario debió cerrarse por ahora, pero se reabrirá eventualmente.
 
-[lee más sobre curaduría comunitaria, con muchas traducciones](https://discourse.hencommunity.quest/t/teiaart-guest-community-curator-with-translations/577)
-
-  
-  
-
+[lee más sobre curaduría comunitaria, con muchas traducciones](https://discourse.teia.art/t/teiaart-guest-community-curator-with-translations/577)
