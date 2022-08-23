@@ -1,8 +1,8 @@
 ---
-title: 'Annoucement: Update to Code of Conduct and Terms & Conditions'
+title: 'Announcement: Update to Code of Conduct and Terms & Conditions'
 date: 2022-08-23T12:00:00Z
 lastmod: '2022-08-23'
-tags: ['communication', 'update', 'newsletter', 'DAO', 'COC']
+tags: ['update', 'COC', 'official']
 draft: false
 summary: 'Read About the Changes to Teias Rules'
 bibliography: references-data.bib
