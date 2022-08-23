@@ -11,6 +11,8 @@ authors: ['merchantcoppola']
 
 ## Update to the Code of Conduct and Terms of Service
 
+*(this update is taken from the community newsletter #10)*
+
 Teia has been managing its own restriction-list for a while now, and the Content Moderation Team has agreed on a few changes and clarifications to the [Rules of the Platform](https://github.com/teia-community/teia-docs/wiki/Core-Values-Code-of-Conduct-Terms-and-Conditions#terms-and-conditions):
 
 The rules have remained mostly the same, but the documents now better reflect the current practices of the Content Moderation Team and give artists and collectors a better understanding of the context of Teia’s content moderation rules. 
