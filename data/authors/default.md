@@ -1,8 +1,8 @@
 ---
 name: Teia Community
-avatar: /static/images/logo.png
-occupation: Sentient Website Bot
-email: admin@hencommunity.quest
+avatar: /static/images/logo-dark.png
+occupation:
+email: info@teia.art
 twitter: https://twitter.com/TeiaArt
 github: https://github.com/teia-community
 ---

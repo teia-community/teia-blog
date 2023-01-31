@@ -2,7 +2,7 @@
 title: 'Cross-platform NFT trading and fees'
 date: 2022-03-25T11:00:00Z
 lastmod: '2022-03-25'
-tags: ['article', 'writeup', 'tech' ]
+tags: ['article', 'writeup', 'tech']
 draft: false
 summary: 'a closer look at token compatibility, platform funding and the implications of marketplace contract support.'
 bibliography: references-data.bib
@@ -11,12 +11,10 @@ authors: ['aulerius']
 
 _A closer look at token compatibility, platform funding and the implications of marketplace contract support._
 
-
-
 ## Funding through marketplace fees
-  
+
 One major difference between Web2 and Web3 platforms (such as NFT marketplaces) is the funding model: Web2 sustains through ads, data, or premium services (subscriptions). Blockchains and decentralised applications instead rely on fees paid by their users. On Tezos, most NFT marketplaces charge a 2.5% fee that is applied to each sale on the smart contract.
-  
+
 This results in a money flow dynamic that many participants miss out:  
 **All of the platform fees, captured in the final step, need to fund all the preceding steps.**
 
@@ -24,14 +22,13 @@ The sale of an NFT and resulting fees can be independent of where this NFT was c
 
 ![life of your nft-01](https://user-images.githubusercontent.com/97635650/159985332-d161b623-1446-4c0f-a982-5a044f9713e0.jpg)
 
-
 ## Cross-platform compatibility
 
 Here is a [compatibility sheet](https://docs.google.com/spreadsheets/d/11xbk3V2SfdpSSSGfkz3Tr3I2ikPEaOFAX8khX4zDvhA/edit?usp=sharing) of cross-platform NFT compatibility documented by community member [crdng](https://twitter.com/crcdng).
 
-Free choice of many marketplaces is good for users, but it poses a challenge for service providers who typically charge all their fees during the sale step*. This means that only the provider of the listing contract receives the platform fees. This is usually the same platform that the NFT was minted and displayed on, but as Teia gets its own contracts, Versum prepares to index more tokens and Objkt.com being the biggest aggregator of all, it becomes complicated. 
- 
-**Fxhash has mint fees and Versum has tiny utility token fee.*
+Free choice of many marketplaces is good for users, but it poses a challenge for service providers who typically charge all their fees during the sale step\*. This means that only the provider of the listing contract receives the platform fees. This is usually the same platform that the NFT was minted and displayed on, but as Teia gets its own contracts, Versum prepares to index more tokens and Objkt.com being the biggest aggregator of all, it becomes complicated.
+
+\*_Fxhash has mint fees and Versum has tiny utility token fee._
 
 **Showing (indexing) a token, displaying its listings/swaps, and allowing to create new listings are all different things.** In the case of objkt.com for example, the listings from hicetnunc swap contract and objkt.com listings are displayed with no visual distinction, it's seamless. As a result it is considered advantageous to list on hicetnunc because the listings will show up on objkt.com and anything that shows hicetnunc swaps, therefore getting more exposure.
 
@@ -39,28 +36,27 @@ It is therefore the choice of the user creating the listing, on where the fees w
 
 ## Teia - objkt.com cross marketplace swaps
 
-If the recent [community vote for mutual Teia/objkt.com listings](https://vote.hencommunity.quest/vote/QmPDYWmGdxae8gUxqiPa4rkuQCc8P6sggLvUi5HQrrCzug) wins in favour of it, it would benefit the convenience of everyone, but users should understand the implications:  
+If the recent [community vote for mutual Teia/objkt.com listings](https://vote.teia.art/vote/QmPDYWmGdxae8gUxqiPa4rkuQCc8P6sggLvUi5HQrrCzug) wins in favour of it, it would benefit the convenience of everyone, but users should understand the implications:
 
-In theory this means that both objkt.com and Teia swaps can capture their own fees* independently on where people see and collect them, but people will have a choice upon making a listing on who they want their fees to go to. If people overwhelmingly prefer using one marketplace over another for swaps, the one that's losing attention will miss out on fees and support, even though they might be still preferred and used for all the steps leading up to sales (minting, indexing, UX, browsing, curating, etc), which all have a cost associated with their maintenance and development.  
+In theory this means that both objkt.com and Teia swaps can capture their own fees\* independently on where people see and collect them, but people will have a choice upon making a listing on who they want their fees to go to. If people overwhelmingly prefer using one marketplace over another for swaps, the one that's losing attention will miss out on fees and support, even though they might be still preferred and used for all the steps leading up to sales (minting, indexing, UX, browsing, curating, etc), which all have a cost associated with their maintenance and development.
 
-**Teia swaps have currently 0% fees but only temporarily.*
+\*_Teia swaps have currently 0% fees but only temporarily._
 
 At the moment objkt.com shows HEN listings but they do not capture any fees from it, but with upcoming Teia contracts the situation is yet to be decided, hence the vote.
 
 ## Third party tools
 
-In the case of community made tools such as [the ones from NFTbiker](https://nftbiker.xyz/), it is important to understand that they only relay the listings from other platforms and don't capture any fees from sales, so any costs associated with running such tools are up to the creator to cover by themselves or possibly through donations.  
+In the case of community made tools such as [the ones from NFTbiker](https://nftbiker.xyz/), it is important to understand that they only relay the listings from other platforms and don't capture any fees from sales, so any costs associated with running such tools are up to the creator to cover by themselves or possibly through donations.
 
-For independent tools the choice to show different swaps applies in a similar way that it applies to the different marketplaces: Swaps need to be supported by tools too. This means that Teias marketplace action is currently not reflected in a lot of community tools that havent switched to support Teias swaps yet.* 
+For independent tools the choice to show different swaps applies in a similar way that it applies to the different marketplaces: Swaps need to be supported by tools too. This means that Teias marketplace action is currently not reflected in a lot of community tools that havent switched to support Teias swaps yet.\*
 
 A possible idea proposed by community member [denscimonk](https://twitter.com/denscimonk) for the future of Teia is to create a smartcontract or even separate organisation that can direct a certain percentage of fees to tool developers and alternative mirror creators and works towards keeping cerstain contract standards across the OBJKT ecosystem.
 
-**Tool builders that want to include the Teia marketplace swaps for their tools, can find an [article on the changes to the indexer on teias Wiki](https://github.com/teia-community/teia-docs/wiki/Indexer-changes-for-Teia)*
-
+\*_Tool builders that want to include the Teia marketplace swaps for their tools, can find an [article on the changes to the indexer on teias Wiki](https://github.com/teia-community/teia-docs/wiki/Indexer-changes-for-Teia)_
 
 ## Why Is it not possible to trade Versum tokens on objkt.com?
 
-*Interpretation by the author based on info provided by devs on their discord*
+_Interpretation by the author based on info provided by devs on their discord_
 
 Versum does not allow third parties to create new marketplace listings of their tokens (ITEMS), and potentially take fees, without their agreement (enforced by an allowed list on the contract).
 

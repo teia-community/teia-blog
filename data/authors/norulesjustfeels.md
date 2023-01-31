@@ -1,10 +1,10 @@
 ---
 name: NoRulesJustFeels
-avatar: 
+avatar: /static/images/logo-dark.png
 occupation: 3D artist, Former Google Assistant Developer Relations Engineer
 twitter: FeelsNoRules
 teia: NoRulesJustFeels
-github: 
+github:
 ---
 
 https://linktr.ee/norulesjustfeels
