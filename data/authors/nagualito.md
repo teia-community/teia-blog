@@ -1,7 +1,7 @@
 ---
 name: Nagualito
-avatar: /static/images/logo-dark.png
+avatar: /static/images/nagualbox_avatar.jpg
 # occupation:
-# twitter:
-# teia:
+twitter: nagualbox
+teia: nagualbox
 ---

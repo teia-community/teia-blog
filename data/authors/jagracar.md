@@ -1,10 +1,10 @@
 ---
 name: Jagracar
-avatar: /static/images/logo-dark.png
+avatar: /static/images/jagracar_avatar.jpg
 occupation: Teia smartcontract dev
 email:
-twitter: https://twitter.com/jagracar
-github: https://github.com/teia-community
-teia: https://teia.art/jagracar
+twitter: jagracar
+github: jagracar
+teia: jagracar
 website: https://jagracar.com/
 ---

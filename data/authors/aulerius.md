@@ -1,10 +1,11 @@
 ---
 name: Aulerius
-avatar: /static/images/logo-dark.png
+avatar: /static/images/aulerius_avatar.png
 occupation: Restless Animotionizer and art enjoyer from 🇱🇹
 email:
-twitter: https://twitter.com/aulerius2
-github:
+twitter: aulerius2
+teia: aulerius
+github: aulerius
 ---
 
 https://linktr.ee/aulerius

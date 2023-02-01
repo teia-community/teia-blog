@@ -1,8 +1,8 @@
 ---
 name: jovi
-avatar: /static/images/logo-dark.png
+avatar: /static/images/jovi_avatar.png
 occupation: chinese translator, DAO enthusiast, collector, outreach
-twitter: https://twitter.com/Jovinft
-teia:
+twitter: Jovinft
+teia: jovinft
 github:
 ---

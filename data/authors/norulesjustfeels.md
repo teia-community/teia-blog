@@ -1,6 +1,6 @@
 ---
 name: NoRulesJustFeels
-avatar: /static/images/logo-dark.png
+avatar: /static/images/feelsnorules_avatar.jpg
 occupation: 3D artist, Former Google Assistant Developer Relations Engineer
 twitter: FeelsNoRules
 teia: NoRulesJustFeels

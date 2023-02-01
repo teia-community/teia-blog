@@ -1,8 +1,8 @@
 ---
 name: babycommando
-avatar: /static/images/logo-dark.png
+avatar: /static/images/babycommando_avatar.jpg
 occupation: translator, DAO architect
-twitter: https://twitter.com/BabyCommando_
-teia: https://teia.art/babycommando
+twitter: BabyCommando_
+teia: babycommando
 github:
 ---

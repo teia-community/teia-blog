@@ -1,8 +1,8 @@
 ---
 name: denscimonk
-avatar: /static/images/logo-dark.png
+avatar: /static/images/denscimonk_avatar.jpg
 occupation: UI designer, voting wizard, resindent sceptic
-twitter: https://twitter.com/denscimonk
-teia: https://teia.art/DenScimonk
+twitter: denscimonk
+teia: DenScimonk
 github:
 ---

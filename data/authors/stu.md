@@ -1,8 +1,8 @@
 ---
 name: stu
-avatar: /static/images/logo-dark.png
+avatar: /static/images/stusontier_avatar.jpg
 occupation: charity crew
-twitter: https://twitter.com/stusontier
-teia: https://teia.art/tz/tz1U8mFPuyGr48BWnULky9kUqAVQk8ewBHtU
-github: https://github.com/stumats
+twitter: stusontier
+teia: s
+github: stumats
 ---
