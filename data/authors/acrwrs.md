@@ -1,11 +1,11 @@
 ---
 name: Alex Crouwers
-avatar: 
+avatar: /static/images/acrwrs_avatar.webp
 occupation: Artist, artistic PhD researcher, public relations for teia
-twitter: https://twitter.com/acrwrs
+twitter: acrwrs
 teia: acrwrs
-github: 
+github:
 ---
 
-Explorative visual artist & artistic PhD researcher in the digital realm. 
+Explorative visual artist & artistic PhD researcher in the digital realm.
 Currently externalising eco-anxiety through new mythologies

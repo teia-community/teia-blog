@@ -5,12 +5,12 @@ const siteMetadata = {
   description: "Follow the Teia Community's quest for decentralization.",
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://hencommunity.quest',
+  siteUrl: 'https://blog.teia.art',
   siteRepo: 'https://github.com/teia-community/teia-blog',
-  siteLogo: '/static/images/logo.png',
-  image: '/static/images/logo.png',
-  socialBanner: '/static/images/logo.png',
-  email: 'admin@hencommunity.quest',
+  siteLogo: '/static/images/logo-dark.png',
+  image: '/static/images/logo-dark.png',
+  socialBanner: '/static/images/teia-cover.jpg',
+  email: 'info@teia.art',
   github: 'https://github.com/teia-community',
   twitter: 'https://twitter.com/teia_community',
   locale: 'en-US',
@@ -31,7 +31,7 @@ const siteMetadata = {
     // https://vercel.com/docs/environment-variables
     provider: 'discourse', // supported providers: discourse, giscus, utterances, disqus
     discourseConfig: {
-      url: 'https://discourse.hencommunity.quest/',
+      url: 'https://discourse.teia.art/',
       user: 'blogbot',
       threadTerm: 'url', // supported options: url, topic (not implemented yet)
     },

@@ -1,8 +1,8 @@
 ---
 name: Surfingthedarkness
-avatar: /static/images/logo.png
+avatar: /static/images/surfingthedarkness_avatar.jpg
 occupation: translator, discord mod
 twitter: https://twitter.com/surfingthedark
-teia: 
-github: 
+teia:
+github:
 ---

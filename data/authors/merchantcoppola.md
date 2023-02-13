@@ -1,10 +1,10 @@
 ---
 name: MerchantCoppola
-avatar: /static/images/merchantcoppola-avatar.png
+avatar: /static/images/merchantcoppola_avatar.png
 occupation: pr & communication, visual poet
-twitter: https://twitter.com/MerchantCoppola
+twitter: MerchantCoppola
 teia: merchant_coppola
-github: https://github.com/merchantcoppola
+github: merchantcoppola
 ---
 
 - experimental typography/visual poetry

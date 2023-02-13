@@ -1,0 +1,199 @@
+---
+title: 'Teia Newsletter #8 - 18th June 2022'
+date: 2022-06-18T12:30:00Z
+lastmod: '2022-06-18'
+tags: ['communication', 'update', 'newsletter', 'DAO']
+draft: false
+summary: 'thread by thread, we weave our w3b'
+bibliography: references-data.bib
+authors: ['merchantcoppola', 'malicioussheep']
+---
+
+[Click here for the Chinese Translation of this Newsletter by Jovi](https://docs.google.com/document/d/e/2PACX-1vRChU2Luf_64KbqS8Zlzb0_Qq-I-cD-AtT8wNO3KaX28Y56hFeYfao8YUstTP-VY6wfPJvACVh8Cbts/pub)
+
+_thread by thread, we weave our w3b_
+
+This month we celebrate pride, take a look at the current state of DAO development, brainstorm about tool building, welcome Henext to the Teia party and visit NYC - if not in person, at least virtually; Alas, brave new world!
+
+<TOCInline toc={props.toc} asDisclosure toHeading={2} />
+
+## Henext Now Shows Teia Swaps
+
+[henext.xyz](https://www.henext.xyz/) is an awesome alternative UI for OBJKT token trading: It has expanded functionality, statistics, a follow feature and a great overview of your collection of OBJKTs minted on hicetnunc/Teia. 
+
+And now, henext also supports Teia swaps: You can see prices for and collect pieces swapped with the Teia marketplace contract there.
+
+If you havent tried Henext yet, make sure to check it out and if you like it, consider donating to its dev [xfunc](https://twitter.com/xsfunc) who made this possible (donations can be made through the Henext landing page).
+
+## New Teia Updates and Fixes
+
+### Collab Swaps on Teia
+
+Since the last Teia update on June 14th, collab pieces swapped on Teia are now also swapped onto the Teia marketplace contract. Before that, collab swaps happened onto the H=N v2 contract. If you want to bring your old collab swaps onto the Teia marketplace contract, simply cancel and reswap them. 
+
+### Quick updates
+
+Time is of the essence, so here are a few bullet-points of recent updates/discussions
+
+- PDFs are now resized automatically on objkt pages (thanks to [encapsuled](https://twitter.com/encapsuled_))
+- The transfer tab now has an updated text that explains that the transfer tab is only for collab contracts
+- The indexer is now updated and gets constantly improved (huge thank you to [zir0h](https://twitter.com/Zir0h) for his stellar work)
+- We are starting an accessibility audit for the Teia website in order to improve usability and accessibility (thanks to [sourorchid](https://twitter.com/sourorchidNFT))
+- Burn and transfer are now shown in the history tab, we added teztool and fountain address to the quick address of the collab page
+- New donation addresses added to the list of “suggested beneficiaries” (Infra donation, Fountain donation, Equity donation)
+- Any swaps from restricted accounts are now labelled as restricted and cannot be bought
+- Burn transactions and transfers are now displayed in history tab
+- We are currently setting up [new minting options](https://teia-ui-pr-113.onrender.com/mint) like a NSFW category and photosensory warning (currently looking for people to test drive this update, if you are interested, join the channel #ui-testing in our Discord)
+
+## News From the Quest to DAO
+
+We are taking the road to our Teia DAO step by step: The smart-contracts are already written, the discussions around the Token distribution are mostly finished (thanks for everyone’s feedback so far, the DAO working group is still interested in any kind of input); All the moving parts are slowly coming together. 
+
+### Token Drop
+
+Based on the current state of the distribution discussion, we set up an [exemplary token distribution model](https://docs.google.com/spreadsheets/d/1-BzSWTdz5pH9xlEVScEPVeFB5DTpenwn5eIYMJFg4X8/edit?usp=sharing) that is updated with the feedback from the community we got so far. 
+
+We also introduced the “contribution level” parameter, as announced in the latest [DAO Thread](https://twitter.com/TeiaCommunity/status/1530616482387791873?s=20&t=B34uVYF7hwr8XHEjzhRmWw): substantial contributors to hicetnunc and Teia will get additional tokens: There are two levels of contribution: 
+
+- “Basic Level”: This level is for everyone who contributed to hicetnunc in substantial ways, contributed to the hicathon (both weekends), built tools for the OBJKT ecosystem or contributed to Teia with an estimated day of work or less or in the beginning of the Teia project but didn't contribute that much after January 22.
+- “Active Level”: This level is for everyone who kept building and maintaining Teia since January 22 (official Teia launch) and members /builders of the wider ecosystem that played a vital role for Teia. We are still updating that list, so feel free to suggest additions and note that this is a unfinished list for distribution model testing and not final yet.
+
+For the drop, we need to determine the exact moment/block level of the **hDAO snapshot**. For this, [Jagracar](https://twitter.com/jagracar) has set up [a proposal](https://bafybeibm3c7hxh6a2zx5izo5uteuzcts5m4n76iagcpjb6sqlghgarfayq.ipfs.infura-ipfs.io/) that can be executed with [our main multsig wallet](https://github.com/teia-community/teia-docs/wiki/Teia-Multisig-wallets) and will determine a block for the hDAO snapshot using the fxhash random number generator. This way we can make sure no one can possibly know which block will be used for the snapshot prior to the execution of the random function. [You can take a look at the proposal and learn more about it here](https://bafybeibm3c7hxh6a2zx5izo5uteuzcts5m4n76iagcpjb6sqlghgarfayq.ipfs.infura-ipfs.io/). [This jsfiddle file](https://jsfiddle.net/4ushkrtf/) that can be used to calculate the hDAO block level once the proposal is executed.
+
+### Legal
+
+For the registration, we need to write a legal document, the operational agreement, which defines the DAO’s structure and rules on paper and before the law. After gathering info, our legal team is currently starting to work on this. We also need to define our “founding members” - those will officially register Teia as a DAO on the Marshall Islands. These members need to provide non-public KYC info. After the finished DAO launch, those founding members have no additional powers in comparison to other token holders/roles. It's just the natural persons that sign the documents for the registration. 
+
+An (almost) up to date summary of this discussion can be found in [this working doc](https://docs.google.com/document/d/1bdg8_jPRuK-6Q6r6xj6zgEiHDNR9fcsj8hNsu8zS2Ho/edit#heading=h.siic61v9nqs5).
+
+### Funding the Registration
+
+Registering a LLC is not free. We need to pay around $8k USD for the registration, which we will need to raise upfront. Since we will be able to raise fees *after* the registration, it would be possible to pay these funds back from people that are willing to lend us some money for the registration. If you are interested in lending Teia money for the registration to kickstart the registration, please get in touch in the #general-operations channel.
+
+### Operational Decisions
+
+While discussing how the DAO should work, it got clear that we will need to hire some developers to help with improving Teia and pick up tasks that the volunteer devs can’t finish in a timely manner. This will help us with developing the features and tools that the DAO decides it wants. Once we can activate the fees with the registration of the LLC, we can start using the money earned to pay for certain work. With the planned marketplace fee of 2.5%, the current market and costs, we won't be able to pay many people, but especially for dev tasks, we will probably need to hire developers in order to improve the marketplace and maintain the code developed by volunteers in a timely manner.
+
+We will probably also introduce the role of “managing members” that are assigned to take care of operational decisions and oversee especially the first phase of the DAO Launch: In the beginning, we will need to make sure the DAO contracts are tested and adjusted, in this first phase, there will be DAO managers and admins to oversee if the DAO works like intended.
+
+### Representatives: Call To Action
+
+Our DAO is set up in a way that a council of community representatives gets additional voting power [to work towards equity and representation](https://docs.google.com/document/d/1iM9F021jjatLSqzETqLsHuBF0wiGiu9WrbDIL9tyaSo/edit). For this to work, we need to define rules and members of that council, as the concept of a representative council within the DAO will only work if enough people are involved. At the end of last year a first list of representatives was drafted. Now is a great time for these reps to come together and discuss and define this representatives role. **If you have been contacted with the question to be a community rep, please head to the #representatives channel on the Teia discord, your action and opinion is needed now!**
+
+### Roadmap
+
+*(The current roadmap goes something like this (of course, this might change with new developments/info/opportunities):*
+
+1. Determining the “founding members” (the ones to officially register Teia), Asking for loans to fund the registration, writing the DAO working agreement, defining the “DAO rules”, setting a block for the hDAO snapshot.
+2. Pre-DAO voting: Using the Teia vote tool to decide on the distribution models, finding consensus around distribution, getting community approval of the registration as a DAO, getting community approval for our Code of Conduct/Manifesto/Terms & Conditions (defining rules), 
+3. Officially registering Teia as a DAO LLC, turning on marketplace fees.
+4. Token distribution
+5. Using the DAO smart-contracts. In the first phase, a managing team will be effectively in charge of the DAO while we use the DAO contracts to see if everything works out before we switch to being fully governed by the smart-contracts. 
+
+## Call to action: Tool Building
+
+> A brief look on the third party tools situation in June 2022: 
+For a long time, the constantly developed and maintained NFTBiker tools were the go-to tools for Teia community and beyond. However, access to many of the tools have now been restricted and depend on the goodwill of a single person. 
+>
+>While people often take the availability of public tools and services for granted (see “tragedy of the commons”), developing, maintaining and operating software takes a lot of resources - especially from a single developer. Also running operations (servers, indexers) cost money - sustainable development and funding models are needed. Some resources are available, see: [https://twitter.com/maxcapacity/status/1536222519757135872](https://twitter.com/maxcapacity/status/1536222519757135872)
+>
+>A healthy, resilient ecosystem cannot rely on a central repository: it needs redundancy and alternatives
+> 
+*-[crcdng](https://twitter.com/crcdng)*
+
+After NFTbiker decided to no longer run his tools for the public, a lot of discussions have been started about setting up a community run and owned alternative. NFTbiker did in fact put most tools under a license that allows the community to use the code for free if it doesn’t get sold and access is open. 
+
+In the current state that Teia is in (not yet able to pay for external devs, run by a handful volunteer devs) the current volunteers are fully booked with maintaining and updating the main marketplace on a voluntary basis. However, Teia could be the perfect place to gather resources and knowledge, to provide the needed indexer for the tools (Zir0h has already set up a clone of NFTBiker’s cross marketplace indexer, teztok is another option for tool builders) and organising a group effort around developing the tools needed for a “community toolbox”.
+
+In the future Teia will have more resources for developing tools, but for now everything relies on efforts by the community. We could start another hackathon effort or support independent developers that want to recreate specific tools. We could also help with organizing, developing long term plans for development and maintenance of said tools be, or find synergies and help forming working groups.
+
+If you are interested in joining the group effort, please say hello in the #tools-dev channel on our discord server, lets see if we can find the people needed to get this off the ground!
+
+## Ecosystem Events
+
+Last but not least, our ecosystem is bursting with community events and exhibitions; There are conventions like [NFT.NYC](http://NFT.NYC), minting events like #tezosart or the upcoming 1of1 event and of course it’s #Tezospride month, celebrating the colorful 2SLGBTQIA+ community.
+
+### NFT.NYC
+
+During this year’s NFT.NYC conference, join us on Tuesday, June 21 from 6-9PM for the Teia After-Party at Hunters Point Studios in Long Island City in coordination with the art gallery Lydian Stater. The after-party will feature free food and drinks, NFT giveaways, artist/collector on-boarding, a Teia artwork showcase, and the opening of *post industrial digital dysmorphia*, an exhibition of works by Joiri Minaya & Nando Alvarez-Perez curated by Carlos Franco at Lydian Stater ([www.lydianstater.co](http://www.lydianstater.co/))
+
+Thank you to community-affiliated organizations Group Dot BR ([www.group.br.com](http://www.group.br.com/)) for providing screen solutions and Teia Surf ([teia.surf](https://teia.surf)) for catering.
+
+Directions from Times Square: Take the 7 train one stop to Hunters Point Avenue. Hunters Point Studios is a short walk south over the 21st St. walking bridge at 51-02 21st St, Long Island City, NY 11101.
+
+submission form: [https://twitter.com/a_tchuca/status/1537106867146596352?s=20&t=w-1F5wX3hlU3m1KpWCOzsQ](https://twitter.com/a_tchuca/status/1537106867146596352?s=20&t=w-1F5wX3hlU3m1KpWCOzsQ)
+
+### TezosPride
+
+Pride month is not over yet! For the whole month of June we celebrate Pride month with lots of events and a minting event highlighting 2SLGBTQIA+ artists. You can find more info in this info sheet. Take a look at all the artworks minted for the event on NFTBikers event page [https://nftbiker.xyz/event/tezospride?sort=date](https://nftbiker.xyz/event/tezospride?sort=date)
+
+The logos were put live a little later than 1st of June so we will keep them a little bit longer than 1st of July. 
+
+There will soon be a #tezospride feed available directly on Teia as well for works minted on Teia! It is currently available on [Teia.rocks](http://Teia.rocks) and will be launching soon on [Teia.art](http://Teia.art)!
+
+Let's spread some colors onto the Teia marketplace and Tezos ecosystem! For more information, please see this document with suggested collab contract fundraiser beneficiaries wallets for Queer Museum of Digital Art, Teia Fountain Multisig and Teia Equity Representative Multisig!
+
+[https://docs.google.com/document/d/1Gz06YYrpQ3b_Ude589dpeUERAAJTUx-3sERsc_sy2sM/edit?usp=drivesdk](https://docs.google.com/document/d/1Gz06YYrpQ3b_Ude589dpeUERAAJTUx-3sERsc_sy2sM/edit?usp=drivesdk)
+
+[![pridetwit](https://user-images.githubusercontent.com/97635650/174428715-3eab0705-15fc-45d9-a124-adf7652f613e.JPG)
+](https://twitter.com/TeiaCommunity/status/1532087749045538819?t=5qtfPxlkTjfiDLWO6LWIsg&s=19)
+
+### Protoworlds Pride Month Event
+
+> As a lovely coincidence, we would like to take the chance and celebrate #TezosPride with the community. Create, collect and build with some #TezosPride NFTs together
+> 
+> There will be more events in the future. What else subjects and event types interest you? Got crazy ideas and want to organize some events? Would love to hear from you and support your creativity.
+> 
+> Build-together Event Vol.1
+Hi friends, the first Build-together event has been scheduled at
+June 19, 2022 12:00 PM - June 19, 2022 2:00 PM.
+( 6/19 8-10am PST | 6/19 4-6pm UTC/GMT | 6/20 0-2am UTC+8 )
+> 
+[![protontwit](https://user-images.githubusercontent.com/97635650/174428745-c5fe4e60-b202-4a80-9cee-fcdb67484e51.JPG)
+](https://twitter.com/Protoworld_io/status/1537113461963968514)
+
+### Introducing TezTown and The Event: Battle of the Bands
+
+TezTown is a community for creators, collectors, builders, and anyone interested in learning about the Tezos blockchain. In addition, we provide educational content and curriculum for creators, collectors, and some aspects of the tech side and baking are coming soon. We also host events to help members connect with other community members throughout the Tezos ecosystem. Lily White, the Mother of Tez, is a Tezos blockchain creator, collector, and community builder who founded TezTown. She brought together a team of passionate Tez creators, developers, and collectors who share her vision of building a community around art, education, and technology.
+
+TezTown has a multi-skilled team that is focused on a diverse community of creators, collectors and builders, with many types of genres and collections. It is a place where anyone on the Tezos blockchain can come to learn, be encouraged, and participate. Our community liaisons are volunteers from 16 countries, making us a truly international community. Our volunteers come with a wide range of education and experience, as do many of our community members, which are known as Townies.
+
+[![teztowntwit](https://user-images.githubusercontent.com/97635650/174428775-5d050440-8b6d-4785-a268-aa9332b1f4f8.JPG)
+](https://twitter.com/Tez_Town/status/1535260495908851712)
+
+### #tezosartweek
+
+![artweek](https://user-images.githubusercontent.com/97635650/174429802-f50aa479-602d-468d-a9da-349599ce66dd.jpg)
+
+
+
+### 1of1
+
+Attention, upcoming: The first week of July is going to be 1/1 season!
+Participate in the scarcity event by minting your own single edition pieces!
+
+[more info in this tweet](https://twitter.com/1of1xtz/status/1527656626567651330?t=o8d87n9KR5IhVElxNdVYWQ&s=19)
+
+[![1of1scaledown](https://user-images.githubusercontent.com/97635650/174429760-6404849a-7275-493d-acbe-c404786e3ed9.jpg)
+](https://twitter.com/1of1xtz/status/1527656626567651330?t=o8d87n9KR5IhVElxNdVYWQ&s=19)
+
+### #tezosanimechallenge
+
+[![animetwit](https://user-images.githubusercontent.com/97635650/174428874-66389f08-ba5b-4cf0-94e9-e92761f59900.JPG)
+](https://twitter.com/tezos/status/1532442056269959168?t=ilAIcprj6BLoYxpEXeWMKA&s=19)
+
+## The fountain invites!
+[![fountainscldwn](https://user-images.githubusercontent.com/97635650/174431833-3f3b743d-b1a4-4073-8c28-f3ff73ae2756.jpg)
+](https://youtu.be/2Rf4HMDN6xo)
+
+## Let’s Support Teia
+
+Teia is run by volunteers and currently relies on Donations. If you have a few Tezos to spare, please consider donating to our infra donation address [tz1Q7fCeswrECCZthfzx2joqkoTdyin8DDg8](https://tzkt.io/tz1Q7fCeswrECCZthfzx2joqkoTdyin8DDg8/operations/). 
+
+We are always looking for developers that are up for donating a little bit of their time to improve the marketplace: We accept [Github PRs](https://github.com/teia-community/teia-ui) directly, looking for devs to pick up [issues](https://github.com/teia-community/teia-ui/issues) (there are always some [smaller issues for new starters to pick up](https://github.com/teia-community/teia-ui/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)). If you want to contribute but don’t know how to, please come to our discord and say hello in the #general-dev channel. 
+
+Remember: Teia is what you make of it, everyone is invited to joing helping!
+
+## MoTa
+
+Finally a fun little tip: Documentation/archive Guild member [deebee](https://twitter.com/deebee) launched the site [https://artfkt.art/](https://artfkt.art/) for his “museum of Tezos artifacts”, which aims at curating OBJKTs related to hicetnunc/Teias history as well as a generative collection. Especially the [“history collection”](https://teia.art/the_museum_of_tezos_artfkts/collection), “an attempt to curate OBJKTs that define the unique history and culture of the HEN/Teia community”,  is worth a visit for everyone that wants to learn more about the history of the community or take a trip back to 2021 when all of this started.

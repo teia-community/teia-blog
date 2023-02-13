@@ -2,14 +2,14 @@ const linksData = [
   {
     title: 'teia.art',
     description: `Teia.Art Marketplace`,
-    imgSrc: '/static/images/logo.png',
+    imgSrc: '/static/images/logo-dark.png',
     href: 'https://teia.art',
   },
   {
     title: 'Teia Vote',
     description: `Vote on the future of the Teia community project.`,
     imgSrc: '/static/images/teia-vote.png',
-    href: 'https://vote.hencommunity.quest',
+    href: 'https://vote.teia.art',
   },
   {
     title: 'Teia Discord',
@@ -21,19 +21,20 @@ const linksData = [
     title: 'Teia Discourse',
     description: `A forum space for long form discussion and planning.`,
     imgSrc: '/static/images/discourse-rectangle.png',
-    href: 'https://discourse.hencommunity.quest',
+    href: 'https://discourse.teia.art',
   },
   {
     title: 'Teia.art Wiki',
     description: `Documentation for the teia.art website.`,
-    imgSrc: '/static/images/logo.png',
+    imgSrc: '/static/images/logo-dark.png',
     href: 'https://github.com/teia-community/teia-docs/wiki',
   },
   {
     title: 'TEIA-COMMUNITY Notion',
     description: `A public collection of resources and documentation for the Teia community.`,
-    imgSrc: '/static/images/logo.png',
-    href: 'https://teia-community.notion.site/teia-community/TEIA-COMMUNITY-3a21f2ddd52b40069c7809b85a7ffbf3',
+    imgSrc: '/static/images/logo-dark.png',
+    href:
+      'https://teia-community.notion.site/teia-community/TEIA-COMMUNITY-3a21f2ddd52b40069c7809b85a7ffbf3',
   },
   {
     title: '@teiacommunity',
@@ -46,6 +47,12 @@ const linksData = [
     description: `Curated Teia art feed, with rotating community curators.`,
     imgSrc: '/static/images/twitter-rectangle.png',
     href: 'https://twitter.com/teiaart',
+  },
+  {
+    title: 'Teias Mastodon Server',
+    description: `Mastodon instance run for and by the community. Open to everyone, NFT art posts encouraged! Mastodon is an open-sourced, decentralized social media software.`,
+    imgSrc: '/static/images/mastodon-logo.svg',
+    href: 'https://mastodon.teia.art/',
   },
   {
     title: 'YouTube',
@@ -63,7 +70,8 @@ const linksData = [
     title: 'Submit A Link',
     description: `Is there an important link we're missing? This is a community powered project and a community powered website, add a link by submitting a PR to our GitHub (it's easy!), or create an issue to provide the info for someone else to add it.`,
     imgSrc: '/static/images/github-rectangle.jpg',
-    href: 'https://github.com/teia-community/teia-blog/issues/new?assignees=&labels=&template=submit_link.md&title=',
+    href:
+      'https://github.com/teia-community/teia-blog/issues/new?assignees=&labels=&template=submit_link.md&title=',
   },
 ]
 
