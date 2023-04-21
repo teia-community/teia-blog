@@ -56,7 +56,7 @@ To minimize the possibility of market manipulation, we need to define a random b
 
 Since the random number is, by definition, between 0 and 1, the hDAO snapshot block will fall between the block when the transaction was executed and 200000 blocks before (approx. 1 month for 15-second blocks).
 
-Today (April 20th, 2023) we created a text proposal ([Proposal #2](https://core-team-multisig.onrender.com/proposals) in the multisig, with [this text file attached](https://ipfs.io/ipfs/QmZxADh6xMggAgGRMwBxQJ3kqAWPbdvTExGKCmSvgmJ2HH)) in the [Teia core team multisig](https://core-team-multisig.onrender.com/proposals) to kick off that snapshot calculation  The current multisig members will vote on it within the next 48 hours, and if approved, the proposal will be executed, which will trigger a transaction in the Tezos blockchain.
+Today (April 20th, 2023) we created a text proposal ([Proposal #3](https://core-team-multisig.onrender.com/proposals) in the multisig, with [this text file attached](https://ipfs.io/ipfs/QmZxADh6xMggAgGRMwBxQJ3kqAWPbdvTExGKCmSvgmJ2HH)) in the [Teia core team multisig](https://core-team-multisig.onrender.com/proposals) to kick off that snapshot calculation  The current multisig members will vote on it within the next 48 hours, and if approved, the proposal will be executed, which will trigger a transaction in the Tezos blockchain.
 
 We will use that transaction to define the operation block and hash. That will automatically define the hDAO snapshot.
 
@@ -77,8 +77,9 @@ The position of the operation hash and the operation block are indicated in the 
 
 In this example:
 
-`operationHash = onjFdmaJMmZ7y12CmNDZTsxKZU41JTBYFJTdVtneToKCwNvAamV
-operationBlock = 3267596`
+`operationHash = onjFdmaJMmZ7y12CmNDZTsxKZU41JTBYFJTdVtneToKCwNvAamV`
+
+`operationBlock = 3267596`
 
 We now have all the information we need to calculate the hDAO snapshot block. Entering the values in the dedicated [teia tool](https://ipfs.io/ipfs/QmYkYdhjGFXndWzcyksJeb5Mtf8CKUX9fR9d9QyeQYWnwd) one gets that the hDAO snapshot block for this example is [3141759](https://tzkt.io/3141759).
 
