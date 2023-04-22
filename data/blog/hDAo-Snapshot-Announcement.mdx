@@ -1,7 +1,7 @@
 ---
 title: 'hDAO Snapshot Announcement'
 date: 2023-04-20T21:00:00Z
-lastmod: '2023-04-20'
+lastmod: '2023-04-22'
 tags: ['communication', 'update', 'dao', 'discussion', 'hDAO']
 draft: false
 summary: 'Wen hDAO conversion? - Everything hDAO holders need to know about the Teia DAO Token claim'
@@ -12,7 +12,14 @@ authors: ['jagracar', 'merchantcoppola']
 
 _Wen hDAO conversion? - Everything hDAO holders need to know about the Teia DAO Token claim_
 
-### Why will hDAO be considered in the Teia DAO Token drop?
+## UPDATE April 22nd: 
+
+We have determined the block number for the hDAO snapshot: 
+**It is [Block # 3400856](https://tzkt.io/3400856/operations).**
+The amount of hDAO in any Tezos wallet during this exact block will be used for our Token distribution models going forward. For mpore info please read the full article.
+
+
+## Why will hDAO be considered in the Teia DAO Token drop?
 
 One year ago, before Teia even had a name, the working group that was sketching up the DAO decided that it would be fair to distribute some of the soon-to-be-issued Teia DAO governance tokens to hDAO holders. Many hDAO holders were involved in shaping our upcoming DAO, hoping that the promises made around the hDAO token could be partially fulfilled through this community DAO. 
 
@@ -24,7 +31,7 @@ On the other hand, hDAO tokens were not issued by Teia, nor did hDAO contribute 
 
 We still plan to keep the promise to reward hDAO holders at least to some extent, but the challenge for the token distribution will be to find a good ratio in the total supply of DAO Tokens between tokens distributed as activity reward, contribution reward, and the hDAO conversion. 
 
-### How much voting power will hDAO Tokens make up?
+## How much voting power will hDAO Tokens make up?
 
 Our plan is to convert hDAO tokens to Teia DAO tokens at a 1:1 ratio for tokens owned up until a certain point in time (the snapshot). 
 
@@ -34,7 +41,7 @@ For example, if we as a community decide that the total number of Teia DAO token
 
 We will hold a **community vote** on how much total supply of Teia DAO Tokens should be minted, which will be announced here on the blog as soon as we are ready.
 
-### Claiming instead of swapping hDAO tokens for Teia DAO tokens
+## Claiming instead of swapping hDAO tokens for Teia DAO tokens
 
 One option discussed early on was to offer a direct conversion of hDAO to Teia DAO tokens, where users would send their hDAO to a contract and receive the same amount of Teia DAO tokens back. However, we decided against this for multiple reasons:
 
@@ -48,7 +55,7 @@ For the token claim we need to take one block on the blockchain as a snapshot of
 
 With the snapshot block, we will use the [hDAO snapshot tool](https://docs.google.com/spreadsheets/d/1-a59_41HG_ia1NAsqKJPoENfyv2sJeOzvACTlPn2hWI/edit?usp=sharing) developed by Teia’s discord user casa#9584 to extract the number of hDAOs associated with each wallet at that moment in time. The tool is able to trace back the owner of the hDAO tokens, even if they put their tokens in a liquidity pool (QuipuSwap, PLENTY, etc).
 
-### How will we determine the exact block for our snapshot?
+## How will we determine the exact block for our snapshot?
 
 To minimize the possibility of market manipulation, we need to define a random block for the snapshot. Since there are no random number calculators on the Tezos blockchain, our plan is to use the same [semi-random number generator](https://www.fxhash.xyz/doc/artist/snippet-api#snippet-code) that fx(hash) uses. We will use the operation hash associated with a given transaction to calculate a random number between 0 and 1. From that, we will calculate the hDAO snapshot block using the following formula:
 
@@ -58,11 +65,13 @@ Since the random number is, by definition, between 0 and 1, the hDAO snapshot bl
 
 Today (April 20th, 2023) we created a text proposal ([Proposal #3](https://core-team-multisig.onrender.com/proposals) in the multisig, with [this text file attached](https://ipfs.io/ipfs/QmZxADh6xMggAgGRMwBxQJ3kqAWPbdvTExGKCmSvgmJ2HH)) in the [Teia core team multisig](https://core-team-multisig.onrender.com/proposals) to kick off that snapshot calculation  The current multisig members will vote on it within the next 48 hours, and if approved, the proposal will be executed, which will trigger a transaction in the Tezos blockchain.
 
-We will use that transaction to define the operation block and hash. That will automatically define the hDAO snapshot.
+We will use that transaction to define the operation block and hash. That will automatically define the hDAO snapshot. Anyone can calculate the block using a [simple tool](https://ipfs.io/ipfs/QmYkYdhjGFXndWzcyksJeb5Mtf8CKUX9fR9d9QyeQYWnwd) provided by the Teia team.
 
-We will announce the snapshot block minutes after we execute the proposal, but anyone could calculate it using a [simple tool](https://ipfs.io/ipfs/QmYkYdhjGFXndWzcyksJeb5Mtf8CKUX9fR9d9QyeQYWnwd) provided by the Teia team.
+**UPDATE April 22nd: We have determined the block number for the hDAO snapshot:**
 
-**This means if everything goes according to plan, we will have a definite hDAO snapshot by April, 22nd, 2023, 20:00 UTC**
+The operation hash of the executed snapshot proposal is [oo3Pyz2eWLwhF7c5tvBVeC6dXurZufawDareLZ5CRtL1Rpx5Vg6](https://tzkt.io/oo3Pyz2eWLwhF7c5tvBVeC6dXurZufawDareLZ5CRtL1Rpx5Vg6/12334424) and its Block is [3405724](https://tzkt.io/3405724/operations), which results in the **final snapshot block of [Block # 3400856](https://tzkt.io/3400856/operations)** when put through the [calculation script](https://ipfs.io/ipfs/QmYkYdhjGFXndWzcyksJeb5Mtf8CKUX9fR9d9QyeQYWnwd)
+
+The amount of hDAO in any Tezos wallet during this exact block will be used for our Token distribution models going forward. For mpore info please read the full article. Any further transactions after that block of hDAO are irrelevant to any Teia developments.
 
 ### Example snapshot calculation
 
