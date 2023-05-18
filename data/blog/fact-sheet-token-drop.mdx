@@ -13,7 +13,7 @@ _Everything you need to know about Teias DAO Token distribution_
 
 This article aims to provide an overview, as well as detailed information, about Teia's upcoming DAO Token drop and answer the most common questions. If you have any further questions, don't hesitate to ask in the channel #dao-building on Teia's Discord or use the discussion thread on our Discourse forum.
 
-
+<TOCInline toc={props.toc} asDisclosure toHeading={3} />
 
 ## Intro
 
@@ -31,8 +31,8 @@ All eligible Tezos wallets will be invited to claim their Teia tokens and partic
 
 Whoever claims their tokens becomes a member of Teia DAO LLC by virtue of token ownership.
 
-## Table of contents
-<TOCInline toc={props.toc} asDisclosure toHeading={2} />
+
+
 
 ## Next steps
 
@@ -110,13 +110,15 @@ After the claiming period of a few months, unclaimed tokens will also remain in 
 
 ## Q&A
 
+<TOCInline toc={props.toc} asDisclosure fromHeading={4} toHeading={4} />
+
 ### What Are Teia DAO Tokens for?
 
 The Teia DAO tokens only purpose is voting on operational decisions for Teia as registered non-profit DAO LLC. The Tokens define who is member of the DAO. Due to the nature of the RMI DAO LLC legal construct, membership of the LLC is defined by ledger addresses on the blockchain. This means, anyone who holds Teia DAO Tokens is considered a part of the DAO. 
 
 Due to the limited liability legal setup Teia has incoprporated under, the LLC acts as a legal wrapper, so individual members wont be held legally responbsible for actions of the DAO (unless they are commiting a crime).
 
-### Why do i need to claim my tokens? Why are they not airdopped?
+#### Why do i need to claim my tokens? Why are they not airdopped?
 
 The Teia DAO Token drop will happen via claim, no Tokens will be airdropped. Unclaimed Tokens will remain in the DAO treasury for future distribution(s).
 
@@ -124,7 +126,7 @@ We do this for several reasons: To make the DAO process work, we first need to m
 
 Secondly, since Token ownership means becoming part of the DAO as a member, we don’t want to force anyone to become members, so by claiming your token, you give your consent to becoming part of the DAO. 
 
-### Which wallets are elligible to a token claim?
+#### Which wallets are elligible to a token claim?
 
 Wallets that have interacted with the Hic et Nunc and/or Tezos smart contracts for longer than 14 days are eligible to claim activity rewards. Any wallet that had an hDAO balance during the snapshot block can claim an equal amount of Tezos DAO Tokens.
 
@@ -133,7 +135,7 @@ Wallets that have interacted with the Hic et Nunc and/or Tezos smart contracts f
 - Wallets on the restricted list for breaking the marketplace rules.
 - Wallets that have obviously engaged in wash trading to receive hDAO rewards during the hDAO distribution period wont receive Teias Token rewards for their hDAO and activity parameters 7 and 8.
 
-### When and how long will the claiming period for the tokens be and what are the next steps?
+#### When and how long will the claiming period for the tokens be and what are the next steps?
 
 After this community vote has decided on a token distribution model, we will need a few more weeks to set up the claiming app, readjusting the contribution list based on community feedback, then we can start the token distribution based on the chosen model. 
 
@@ -147,29 +149,29 @@ There will be Teia DAO Tokens remaining in the DAO treasury after the first drop
 
 It is however pretty safe to say that potential future token distributions will be based on activity and contribution to Teia only. After the first distribution, hDAO, activity and contribution to hicetnunc will not be relevant to future Teia token distributions.
 
-### Do I need to do KYC when I am part of Teia DAO
+#### Do I need to do KYC when I am part of Teia DAO
 
 As of today, no member needs to undergo KYC (Know Your Customer) just because they hold Teia DAO Tokens. According to the jurisdiction Teia falls under (Marshall Islands), anyone who holds 10% or more voting power in a DAO LLC must provide KYC. However, the smart contracts have a limit of tokens a wallet can hold implemented, which means no wallet can hold more than, for example, 5% (exact amount not decided yet) of overall Tokens. There will be exceptions to that rule for addresses like the treasury that need to hold more tokens but can’t be used to vote.F
 
-### Are there Tax implications if i claim my tokens?
+#### Are there Tax implications if i claim my tokens?
 
 We ask all users who want to claim their tokens to check their local tax regulations for possible tax liabilities related to token claims. Teia does not issue these tokens as monetary or investment assets, nor does Teia assume any kind of monetary value with these tokens. 
 
 However, due to the fact that these tokens are tradeable on the market, it is very likely that the tokens will have a value on the market. This is beyond Teia's control. Please do your due diligence and research the tax implications in your jurisdiction before claiming your tokens. Teia will not be liable for any personal taxes.
 
-### When will we be able to vote in the DAO? Is there a roadmap?
+#### When will we be able to vote in the DAO? Is there a roadmap?
 
 After the distribution period, we will start using the DAO contracts for voting on DAO proposals. There will be a beta phase for the DAO contracts in which the legal ownership of Teia, and therefore the final say, will remain with the current core team multisig while the DAO contracts are new and might need to be adjusted. In this phase, the DAO will still use the contracts and tokens for voting, but the core team will oversee the beta phase and fine-tune the contracts.
 
 After that, the legal ownership and decision-making will be fully transferred to the [full DAO setup](https://github.com/teia-community/teia-docs/wiki/Governance-on-Teia#phase03-full-dao-launch), at which point the DAO will be run by all its members (=Token holders).
 
-### Will i be able to buy/sell Teia Tokens?
+#### Will i be able to buy/sell Teia Tokens?
 
 Tei DAO Tokens are transferable and tradeable. This Token will have a fixed supply (the amount of which will be determined by a community vote). However, they are not intended to be traded for money per se, and in the future, the DAO might even decide to move to a new Token and/or implement technical disincentives for trading as the Tokens are intended for governance, not for speculation.
 
 Additionally, there will be a fixed maximum amount of tokens one wallet can hold (most probably around 5% of total supply), this includes Liquidity pools. Teia won't set up liquidity pools or such. If people want to trade the Tokens, they will need to set up an LP themselves. If a transaction would give a wallet tokens above that threshold, the transaction will not be processed.
 
-### **How do you prevent single entities from accumulating tokens and taking over the DAO?**
+#### **How do you prevent single entities from accumulating tokens and taking over the DAO?**
 
 We have implemented a few things to make sure Teia stays horizontal
 
@@ -177,11 +179,11 @@ We have implemented a few things to make sure Teia stays horizontal
 - We implemented the option to switch from a linear to a **quadratic voting** mode, which is one solution to curb “Token whales” from takling over if needed.
 - the contracts enforce a **max % of the total supply** that each wallet can hold. this rule was implemented for legal reasons but also helps with this issue. It also applies to liquidity pools which will make it harder for huge amounts of tokens getting sold quickly.
 
-### If there is a 1:1 Token reward for hDAO, what keeps people from buying hDAO on the market before the drop to gain more Teia Tokens?
+#### If there is a 1:1 Token reward for hDAO, what keeps people from buying hDAO on the market before the drop to gain more Teia Tokens?
 
 The amount of hDAO counted per wallet for the token claim has already been determined and locked in via the [hDAO snapshot](https://blog.teia.art/blog/hDAo-Snapshot-Announcement) we took in April. This means that any trading or transfers of hDAO after the snapshot (Tezos block [#3400856](https://tzkt.io/3400856/operations)) are not relevant to the Teia Token drop.
 
-### Does it make a difference if I have multiple wallets or just one?
+#### Does it make a difference if I have multiple wallets or just one?
 
 If you have been active in the Teia/hicetnunc ecosystem with multiple wallets, you will need to claim your Teia DAO Tokens with each of those wallets to receive all the Tokens you are eligible to.
 
@@ -191,7 +193,7 @@ Wallets with less than 14 active days are not counted, so if one of your wallets
 
 This could be unfair in some cases, but the total number of wallets we have to take into consideration for the distribution is so large that we can’t find perfect solutions for every case.
 
-### Is my activity on Objktcom/hicaf being counted, too?
+#### Is my activity on Objktcom/hicaf being counted, too?
 
 All the parameters for the token drop only consider interactions with Teias and/or Hicetnunc smart contracts. This means activity from objktcoms listings won't be counted, but if you interacted with Teia/Hen contracts via objktcoms, Versums, Hicafs or any other UI (i.e. by collecting something swapped on Teia or Hicetnunc on objktcom), then this activity will count for your activity rewards. The UI on which you interacted doesn't matter; the only thing that matters is if your wallet has used Teia's and/or Hicetnunc's smart contracts.
 
@@ -205,7 +207,7 @@ Level 1 is for basic contributions: either contributions to hicetnunc only, coll
 
 Level 2 is for active and/or essential contributors to Teia in particular, aiming to reward contributors who have volunteered for more than one day of work over a long period of time or have played a vital role in Teia's existence to this day.
 
-### Contribution types
+#### Contribution types
 
 **Teia contributors**
 
@@ -230,15 +232,15 @@ Level 2 is for active and/or essential contributors to Teia in particular, aimin
 - ED: Built a tool for the OBJKT ecosystem or set up a mirror during hen discontinuation (lvl 1)
 - EF: individuals that set up a mirror/fork for hen during hen discontinuation (lvl 1)
 
-### I have contributed to Teia/Hic et nunc in a substantial way but i didn't get a contribution level in the distribution sheet.
+#### I have contributed to Teia/Hic et nunc in a substantial way but i didn't get a contribution level in the distribution sheet.
 
 If you feel that you satisfy the above-mentioned contribution parameters and have been  overlooked, please write an email to info@teia.art with your main Tezos address and a brief description of your contribution to Teia and/or Hic et nunc for the DAO core team's consideration. The Teia Core team will do their best to add people who have made significant contributions to the project and apologize if we missed any contributors. The list has been compiled over the last month by a group of volunteers, and errors and oversights can never be ruled out.
 
-### Why is contribution to hicetnunc being rewarded?
+#### Why is contribution to hicetnunc being rewarded?
 
 Since Teia is a fork of the former Tezos marketplace "Hic et nunc," we have also included contributions to Hic et nunc and the wider Tezos NFT ecosystem, as well as individuals and organizations that have helped Teia get to this phase. These contributions have been assigned a level 1. The details are outlined below.
 
-### What do the Parameters on the Distribution model sheets mean exactly?
+#### What do the Parameters on the Distribution model sheets mean exactly?
 
 
 - **address:** The user tz wallet.
@@ -285,7 +287,7 @@ Since Teia is a fork of the former Tezos marketplace "Hic et nunc," we have also
 - **Total_amount:** The total number of Teia DAO tokens that the user will receive. This column is the addition of the previous Teia DAO token columns.
 
 
-### Why are there so many parameters? This is hard to grasp!
+#### Why are there so many parameters? This is hard to grasp!
 
 There are indeed a lot of parameters on the model sheets, these are all data points needed to calculate our distribution along the 9 main parameters described above. When modelling the distribution, we tried to take all kinds of users into account: artists, collectors and contributors, all with different types of activity: some might have less tez volume turnover but are still very active, others have brought a lot of tez volume into the ecosystem, supporting others. 
 
