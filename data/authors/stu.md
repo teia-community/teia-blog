@@ -1,8 +1,7 @@
 ---
 name: stu
 avatar: /static/images/stusontier_avatar.jpg
-occupation: charity crew
-twitter: @stusontier
+twitter: https://twitter.com/stusontier
 teia: s
 github: stumats
 ---
