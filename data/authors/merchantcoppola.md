@@ -2,7 +2,7 @@
 name: MerchantCoppola
 avatar: /static/images/merchantcoppola_avatar.png
 occupation: pr & communication, visual poet
-twitter: MerchantCoppola
+twitter: https://twitter.com/MerchantCoppola
 teia: merchant_coppola
 github: merchantcoppola
 ---
