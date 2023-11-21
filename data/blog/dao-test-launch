@@ -1,0 +1,44 @@
+---
+title: 'Teia DAO alpha testing begins!'
+date: 2023-04-20T21:00:00Z
+lastmod: '2023-04-22'
+tags: ['communication', 'update', 'dao']
+draft: false
+summary: 'The journey to DAO continues!'
+bibliography: references-data.bib
+authors: ['jagracar', 'merchantcoppola']
+---
+
+_The journey to DAO continues!_
+
+With the TEIA token claiming period officially coming to a close and about 3 million tokens claimed, the Teia community is finally able to start experiment with the TEIA tokens.
+
+To catch up on the current state of the DAO and for some additional information, check [out this recent interview with some Teia core team members on twitter spaces](https://twitter.com/i/spaces/1YpKkwXeYLAKj?s=20)
+                                                                                                                                                                      
+## let's explore some new DAO tools together!                                                                                                                                                                                                                                                                                                                                  
+
+A few days ago we opened a new feature: on teia.art/dao page DAO members (= Tokens holders) will now be able to test the voting tools for the upcoming dao launch with their TEIA tokens.
+ 
+During This alpha members can set up dummy proposals and polls and vote for testing purposes. Of course, these won’t have a decision making effect for teia, but will be very important for two main reasons:
+
+While the DAO contracts have been tested by the team for months now, we want to expand the testing group and make sure there are no bugs and exploits in the contracts we use for our DAO
+
+We want to see how much DAO members are interested in voting on a regular basis. We need solid numbers on the amount of active voters in order to adjust our dao parameters. For example, every dao proposal will need a minimum number of votes to be approved (a.k.a the quorum). We need to decide on that number. It should not be too low that all proposals get approved, and not too high that it’s impossible to approve DAO proposals.
+                                                                                                                                                                      
+                                                                                                                                                                      
+
+## Call to action: join the fun!
+
+Are you interested in teias DAO efforts but didn't have the time and energy yet to dig deep into the DAO documentation? Are you looking for an easy and fun way to familiarise yourself with our governing structure? Or do you simply want to set up and vote on the most absurd votes Teias DAO contracts will see in probably a long time (before we switch to serious business)?
+
+Then simply visit the DAO page at teia.art/dao and take a look around, sync your wallet with teia and vote on proposals, set up your own DAO proposals and/or community polls and vote.
+                                                                                                                                                                      
+please send feedback and notes from using the tools either to info@teia.art, hand in comments on our github or leave them on discord
+
+If you want to help further, join the dao channel on our discord and discuss how your testing went: did you find bugs in the user interface? What is the user experience like? Did we miss something? Does voting work with all wallets … any feedback is highly appreciated
+
+
+This testing phase will be going on for a few weeks before we switch to the next phase of the DAO launch: we will start using the tested contracts and UI for voting on actual decisions for teia. During this phase, the core team multisig will still be the legal owners of the Teia DAO LLC, to make sure issues with the contracts or setup cannot lead to issues for teia. After a few month (maybe half a year) we will transfer the legal ownership of Teia to the DAO contracts at which point the holders of TEIA tokens will legally be owners of the Teia DAO LLC and the current DAO team has reached their goal of creating the first DAO owned NFT platform.
+
+
+
