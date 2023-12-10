@@ -27,17 +27,25 @@ const DiscourseComponent = dynamic(
 )
 
 const Comments = ({ frontMatter }) => {
+  let switch_term
+  switch (siteMetadata.comment.provider) {
+    case 'giscus':
+      switch_term = siteMetadata.comment.giscusConfig.mapping
+      break
+    case 'utterances':
+      switch_term = siteMetadata.comment.utterancesConfig.issueTerm
+      break
+    case 'discourse':
+      switch_term = siteMetadata.comment.discourseConfig.threadTerm
+      break
+  }
   let term
-  switch (
-    siteMetadata.comment.giscusConfig.mapping ||
-    siteMetadata.comment.utterancesConfig.issueTerm ||
-    siteMetadata.comment.discourseConfig.threadTerm
-  ) {
+  switch (switch_term) {
     case 'pathname':
       term = frontMatter.slug
       break
     case 'url':
-      term = window.location.href
+      term = siteMetadata.siteUrl + '/blog/' + frontMatter.slug
       break
     case 'title':
       term = frontMatter.title
