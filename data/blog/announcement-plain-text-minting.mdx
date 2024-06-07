@@ -1,0 +1,39 @@
+---
+title: 'Feature announcement: Plain Text Minting'
+date: 2024-06-08T12:00:00Z
+lastmod: '2024-06-08'
+tags: ['update', 'feature', 'Dev', 'Features']
+draft: false
+summary: 'Of decentralised typewriters and other cool stuff'
+bibliography: references-data.bib
+authors: ['merchantcoppola', 'norulesjustfeels']
+---
+
+_Of decentralised typewriters and other cool stuff_
+
+Hello Teians, long time no hear! 
+
+The storms have calmed a little and it has become chill and comfortable in our small little community. That doesn't mean that nothing is happening, quite to the contrary: Our DAO is in its beta phase, and ready to be used ([more info here](https://blog.teia.art/blog/dao-test-launch)). 
+
+And now, there is another new feature on teia.art: Plain text minting inspired by the former text-minting platform typed.art. It gives Text-only artists the tool to concentrate on the essential: Artworks and other pieces that are made of raw text. You can choose between standard text or monospaced text. On Teia and Objktcom, the Token will be displayed in the font “Source Sans Pro”. This ensures text is encoded correctly and displayed as intended on Objktcom and Teia.art. The font is not defined in the Token, so other UIs could display the tokens with other fonts. The token's content is stored in IPFS.
+You can view an example: [OBJKT 850488](https://teia.art/objkt/850488)
+
+Let’s celebrate text based art and show each other what is possible by only using letters and symbols: stories, poems, grocery lists, essays, ASCII, and all kind of other text-based art!
+
+This new feature has been made possible by a community vote: , **Teia now supports plain text mints**!
+This feature was suggested in [Teia Poll #15](https://teia.art/poll/15) and produced by Teia core team member [Ryan Tanaka](https://x.com/ryangtanaka) in and [developed](https://github.com/teia-community/teia-ui/commit/af60898482f4b9041398dc1d68566d35e85bcbd9) by [kiks](https://github.com/kittypurrry) with help from Teias volunteer devs.
+
+
+## How it works
+
+1. A new field on the minting page: "This is a text mint." Check this box.
+2. The text mint input will automatically hide and replace the description box.
+3. You will see the following fields on the minting form:
+    * A checkbox for "Monospace Font Required."
+    * There is a text area labeled "Typed Art Input." Depending on the monospace font required checkbox value, the text area renders the monospace (Iosevka font) or non-monospace (Source Sans Pro font).
+4. As you type text into the text area, a rendered preview of that text is displayed below it.
+5. The preview page is displayed once you click the "Submit" button.
+
+![textminting with Teias minting UI](https://github.com/teia-community/teia-docs/assets/564979/d339a271-6322-4b1f-b804-99423f2368ee)
+
+**Note:** The "monospace" tag is automatically added. The cover and thumbnail images are automatically generated based on the text input and the font selected. The description will also automatically be replaced by the text mint input.
