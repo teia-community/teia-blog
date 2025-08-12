@@ -1,5 +1,5 @@
 ---
-title: Teia @ TezCon 2025, Copyright and Curation Tabs
+title: Teia @ TezCon 2025, Copyrights and Curation Profile Features
 date: '2025-08-11'
 tags: ['conference','copyright','curation','features','tezcon']
 draft: false
@@ -17,8 +17,14 @@ The energy was warm, collaborative, and refreshingly unpolished — artists sket
 
 [![TezCon Family](https://pbs.twimg.com/media/GuoOfR5W4AAFgPW.jpg)](https://x.com/ryangtanaka/status/1940040855462756691)
 
-Following TezCon, [@ryangtanaka](https://x.com/ryangtanaka) announced that monthly Tezos meet-ups will begin in Seattle starting in August.
+Following TezCon, [@ryangtanaka](https://x.com/ryangtanaka) announced that monthly meet-ups will begin if you happen to be near Seattle and want to connect with other digital artists, you’re welcome to join our [**local meetup group**](https://www.meetup.com/creating-collecting-and-selling-digital-art-together/).
 
-## Copyright and Curation Tabs
+## Copyrights and Curation Tabs
 
-On June 25 2025, Teia introduced two small but impactful profile updates. The new **Copyright** feature adds a full registration workflow — including a dedicated `/copyright` route, preview component, smart-contract integration, and governance flow for proposal creation, voting, and execution. At the same time, a new **Curation** tab was added to profile pages, letting users showcase works they have curated (listed for sale but not originally created by them) through a dedicated `/curation` route. Both features build on Teia’s commitment to empowering artists with tools for attribution, discovery, and transparency.
+On June 25, 2025, Teia rolled out two profile updates that quietly extend the platform’s mission of artist empowerment.
+
+The new **Copyright** feature isn’t just a label — it’s a workflow. Artists can now mint a work, register it with an on-chain licensing agreement, and list it for sale knowing the terms are permanently recorded on the Tezos blockchain. Registration lets creators choose exactly which rights a buyer gets — such as reproduction, broadcasting, or derivative works — and optionally add custom clauses. Works minted on Teia or other Tezos contracts can be “verified,” while off-chain or cross-chain works can be registered if the creator can prove authorship. Once in place, the registration becomes a public, immutable record that strengthens provenance and attribution, even though enforcement still depends on traditional legal channels. For a detailed guide, see the [**TEIA Copyright Registration and Licensing Guide**](https://teia.art/objkt/869379).
+
+Meanwhile, the new **Curation** tab gives collectors and curators a space to showcase works they’re selling but didn’t create, making secondary market activity more visible and giving curators a place to express taste as a creative act in its own right.
+
+Together, these features push Teia further toward a transparent, artist-controlled ecosystem — one where both creation and curation have a place in the public profile.
