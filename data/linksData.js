@@ -24,10 +24,10 @@ const linksData = [
     href: 'https://discourse.teia.art',
   },
   {
-    title: 'Teia.art Wiki',
-    description: `Documentation for the teia.art website.`,
-    imgSrc: '/static/images/logo-dark.png',
-    href: 'https://github.com/teia-community/teia-docs/wiki',
+    title: 'Teia.art Docs',
+    description: `Documentation for the teia.art community.`,
+    imgSrc: '/static/images/docusaurus.png',
+    href: 'https://docs.teia.art',
   },
   {
     title: 'TEIA-COMMUNITY Notion',
